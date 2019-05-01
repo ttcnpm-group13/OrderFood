@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food_b"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:text="Order Food"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="50sp" />
+        <TextView
+            android:id="@+id/txtChao"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="200dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:text="Chào mừng bạn đến với ứng dụng đặt món "
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btndangnhap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Đăng nhập"
+            android:textColor="#FFFFFF"
+            app:shadowHeight="20dp">
+
+        </info.hoang8f.widget.FButton>
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btndangky"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Đăng Ký"
+            android:textColor="#FFFFFF"
+            app:shadowHeight="20dp">
+
+        </info.hoang8f.widget.FButton>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="200dp"
+    app:cardElevation="5dp"
+    >
+    //tạo 1 thẻ loại đồ ăn
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/menu_image"
+            android:background="@drawable/food_b"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:textColor="#fff"
+            android:id="@+id/menu_name"
+            android:text="Tên Món"
+            android:background="#61615E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

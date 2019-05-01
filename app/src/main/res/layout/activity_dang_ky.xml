@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food_b"
+    tools:context=".DangKy">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:textColorHint="#FAF8F8"
+        android:id="@+id/edtsdt1"
+        android:textColor="#FFFCFC"
+        android:textSize="35sp"
+        android:inputType="phone"
+        app:met_baseColor="#FFFFFF"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="12"
+        app:met_primaryColor="#FFFFFF"
+        app:met_singleLineEllipsis="true"
+        />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên"
+            android:textColorHint="#FAF8F8"
+            android:id="@+id/edtten"
+            android:textColor="#FFFCFC"
+            android:textSize="35sp"
+            android:inputType="textPersonName"
+            app:met_baseColor="#FFFFFF"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="15"
+            app:met_primaryColor="#FFFFFF"
+            app:met_singleLineEllipsis="true"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:textColorHint="#FAF8F8"
+            android:id="@+id/edtmk1"
+            android:textColor="#FFFCFC"
+            android:textSize="35sp"
+            android:inputType="textPassword"
+            app:met_baseColor="#FFFFFF"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="#FFFFFF"
+            app:met_singleLineEllipsis="true"
+            />
+
+    </LinearLayout>
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btndangky1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="Đăng Ký"
+        android:textColor="#FFFFFF"
+        app:shadowHeight="20dp">
+    </info.hoang8f.widget.FButton>
+
+</RelativeLayout>
