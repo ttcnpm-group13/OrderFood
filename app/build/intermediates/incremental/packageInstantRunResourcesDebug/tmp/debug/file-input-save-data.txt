@@ -1,0 +1,19 @@
+#Internal package file, do not edit.
+#Wed May 01 17:58:16 ICT 2019
+1.base=D\:\\Program\\Eat\\app\\build\\intermediates\\merged_assets\\debug\\out
+2.path=fonts/VNI-Yahoo.ttf
+0.baseType=DIRECTORY
+3.baseType=DIRECTORY
+2.base=D\:\\Program\\Eat\\app\\build\\intermediates\\merged_assets\\debug\\out
+3.set=ASSET
+2.set=ASSET
+1.baseType=DIRECTORY
+3.path=databases/OrderFoodDB.db
+count=4
+1.set=ASSET
+0.path=fonts/NABILA.TTF
+3.base=D\:\\Program\\Eat\\app\\build\\intermediates\\merged_assets\\debug\\out
+0.set=ASSET
+0.base=D\:\\Program\\Eat\\app\\build\\intermediates\\merged_assets\\debug\\out
+2.baseType=DIRECTORY
+1.path=fonts/VNI-Trung Kien.TTF

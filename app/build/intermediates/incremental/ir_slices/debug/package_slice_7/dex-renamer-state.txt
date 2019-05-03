@@ -1,0 +1,4 @@
+#Wed May 01 18:23:52 ICT 2019
+base.0=D\:\\Program\\Eat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+path.0=classes.dex
+renamed.0=classes.dex
