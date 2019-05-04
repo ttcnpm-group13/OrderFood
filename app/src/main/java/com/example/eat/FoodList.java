@@ -11,6 +11,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.eat.Hientai.Hientai;
 import com.example.eat.Interface.ItemClickListener;
 import com.example.eat.Model.Food;
 import com.example.eat.ViewHolder.FoodViewHolder;
@@ -51,7 +52,12 @@ public class FoodList extends AppCompatActivity {
             CategoryId = getIntent().getStringExtra("CategoryId");
         }
         if(!CategoryId.isEmpty() && CategoryId !=null){
-            loadListFood(CategoryId);
+            if(Hientai.isConnectedToInternet(getBaseContext())){
+                loadListFood(CategoryId);
+            }else{
+                Toast.makeText(FoodList.this,"Vui lòng kiểm tra kết nối Internet",Toast.LENGTH_LONG).show();
+                return;
+            }
         }
         //Tìm kiếm
         materialSearchBar = (MaterialSearchBar)findViewById(R.id.searchBar);

@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.example.eat.Database.Database;
+import com.example.eat.Hientai.Hientai;
 import com.example.eat.Model.Food;
 import com.example.eat.Model.Order;
 import com.google.firebase.database.DataSnapshot;
@@ -68,7 +69,13 @@ public class FoodDetail extends AppCompatActivity {
             foodId= getIntent().getStringExtra("FoodId");
         }
         if(!foodId.isEmpty() && foodId !=null){
-            getDetailFood(foodId);
+            if(Hientai.isConnectedToInternet(getBaseContext())){
+                getDetailFood(foodId);
+            }
+            else{
+                Toast.makeText(FoodDetail.this,"Vui lòng kiểm tra kết nối Internet",Toast.LENGTH_LONG).show();
+                return;
+            }
         }
 
     }

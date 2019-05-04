@@ -6,6 +6,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.amulyakhare.textdrawable.TextDrawable;
+import com.example.eat.Hientai.Hientai;
 import com.example.eat.Interface.ItemClickListener;
 import com.example.eat.Model.Order;
 import com.example.eat.R;
@@ -22,8 +24,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-class CartViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-    public TextView name_MonDat ,price_MonDat;
+class CartViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener,View.OnCreateContextMenuListener {
+    public TextView name_MonDat, price_MonDat;
     public ImageView number_MonDat;
     private ItemClickListener itemClickListener;
 
@@ -34,14 +36,21 @@ class CartViewHolder extends RecyclerView.ViewHolder implements View.OnClickList
     public CartViewHolder(@NonNull View itemView) {
         super(itemView);
         //ánh xạ
-        name_MonDat=(TextView)itemView.findViewById(R.id.name_MonDat);
-        price_MonDat=(TextView)itemView.findViewById(R.id.price_MonDat);
-        number_MonDat=(ImageView)itemView.findViewById(R.id.number_MonDat);
+        name_MonDat = (TextView) itemView.findViewById(R.id.name_MonDat);
+        price_MonDat = (TextView) itemView.findViewById(R.id.price_MonDat);
+        number_MonDat = (ImageView) itemView.findViewById(R.id.number_MonDat);
+        itemView.setOnCreateContextMenuListener(this);
     }
 
     @Override
     public void onClick(View v) {
 
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        menu.setHeaderTitle("Lựa chọn thao tác");
+        menu.add(0, 0, getAdapterPosition(), Hientai.DELETE);
     }
 }
 public class CartAdapter extends RecyclerView.Adapter<CartViewHolder> {
@@ -84,4 +93,5 @@ public class CartAdapter extends RecyclerView.Adapter<CartViewHolder> {
     public int getItemCount() {
         return listData.size();
     }
+
 }

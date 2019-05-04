@@ -33,6 +33,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
+import io.paperdb.Paper;
+
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     TextView txtuserName;
@@ -49,7 +51,7 @@ public class Home extends AppCompatActivity
         setSupportActionBar(toolbar);
         //khai bao du lieu tu database
         category= FirebaseDatabase.getInstance().getReference("Category");
-
+        Paper.init(this);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,7 +80,12 @@ public class Home extends AppCompatActivity
         LinearLayoutManager layoutManager;
         layoutManager = new LinearLayoutManager(this);
         list_menu.setLayoutManager(layoutManager);
-        Load_menu();
+        if (Hientai.isConnectedToInternet(this)){
+            Load_menu();
+        }else{
+            Toast.makeText(Home.this,"Vui lòng kiểm tra kết nối Internet",Toast.LENGTH_LONG).show();
+            return;
+        }
     }
     // lấy giữ liệu từ Firebase kết nối với recycler View
     private void Load_menu() {
@@ -122,6 +129,10 @@ public class Home extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        //refresh menu
+        if(item.getItemId() == R.id.refresh){
+            Load_menu();
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -141,6 +152,8 @@ public class Home extends AppCompatActivity
             Intent cartIntent = new Intent(Home.this,Cart.class);
             startActivity(cartIntent);
         } else if (id == R.id.nav_dangxuat) {
+            //Xóa user và password đã ghi nhớ
+            Paper.book().destroy();
             //Logout
             Intent signIn = new Intent(Home.this,Dangnhap.class);
             signIn.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

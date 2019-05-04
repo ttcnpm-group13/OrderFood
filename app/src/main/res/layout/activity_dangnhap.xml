@@ -45,6 +45,17 @@
             app:met_primaryColor="#FFFFFF"
             app:met_singleLineEllipsis="true"
             />
+
+        <CheckBox
+            android:id="@+id/ckbRemember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#fff"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="Lưu đăng nhập"
+            android:textColor="#fff"
+            android:textSize="18sp" />
     </LinearLayout>
     <info.hoang8f.widget.FButton
         android:id="@+id/btndangnhap1"

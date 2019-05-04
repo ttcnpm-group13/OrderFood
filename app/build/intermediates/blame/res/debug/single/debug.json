@@ -952,6 +952,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\xml_nav_states.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\6aa58cdb4ac655435b10f2d46f874aa4\\res\\xml\\nav_states.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
@@ -1170,6 +1174,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_home.xml.flat",
         "source": "D:\\Program\\Eat\\app\\src\\main\\res\\layout\\nav_header_home.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_refresh_black_24dp.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\ic_refresh_black_24dp.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",

@@ -5,6 +5,7 @@ INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-38:12
 INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-38:12
 INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-38:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\489c1396065e4b121a4a25df8387a193\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.rey5137:material:1.2.4] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\6aa58cdb4ac655435b10f2d46f874aa4\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.mancj:MaterialSearchBar:0.7.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\64eb5e3edc8d0ea5fb637c543c5b3ba7\AndroidManifest.xml:2:1-17:12
 MERGED from [com.firebaseui:firebase-ui-database:1.2.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\272582922c0204e3477b6590f9672819\AndroidManifest.xml:2:1-19:12
 MERGED from [com.rengwuxian.materialedittext:library:2.1.4] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\fadd50812459c39cb90f05aed16b1da0\AndroidManifest.xml:2:1-10:12
@@ -15,6 +16,7 @@ MERGED from [com.google.firebase:firebase-database:16.1.0] C:\Users\DELL\.gradle
 MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\e5184a071a59d1c8978a2a3b163e2cd6\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:16.2.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c63db7189890f177e7a85930af3c398\AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\251d6aaec68eddaddec9adea91902673\AndroidManifest.xml:17:1-39:12
+MERGED from [io.paperdb:paperdb:2.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\60c9d2867f25ca722064e94fc3c00cf9\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\d6d6db8d8bfd10f826aff56885911b68\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\ad8505e2e9bf5b2407ca7aefad4604c5\AndroidManifest.xml:17:1-22:12
 MERGED from [info.hoang8f:fbutton:1.0.5] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\170cd2afcc1affc8231bd6259ca27b7b\AndroidManifest.xml:2:1-11:12
@@ -141,6 +143,8 @@ MERGED from [com.google.firebase:firebase-auth:16.2.1] C:\Users\DELL\.gradle\cac
 MERGED from [com.google.firebase:firebase-auth:16.2.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c63db7189890f177e7a85930af3c398\AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\251d6aaec68eddaddec9adea91902673\AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\251d6aaec68eddaddec9adea91902673\AndroidManifest.xml:22:5-37:19
+MERGED from [io.paperdb:paperdb:2.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\60c9d2867f25ca722064e94fc3c00cf9\AndroidManifest.xml:12:5-20
+MERGED from [io.paperdb:paperdb:2.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\60c9d2867f25ca722064e94fc3c00cf9\AndroidManifest.xml:12:5-20
 MERGED from [com.amulyakhare:com.amulyakhare.textdrawable:1.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\e34a889892b702709d681530b345b30d\AndroidManifest.xml:12:5-20
 MERGED from [com.amulyakhare:com.amulyakhare.textdrawable:1.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\e34a889892b702709d681530b345b30d\AndroidManifest.xml:12:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\212714ddead30ead31147cbc08739209\AndroidManifest.xml:7:5-8:19
@@ -251,6 +255,8 @@ INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml
 INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support:design:28.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\489c1396065e4b121a4a25df8387a193\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\489c1396065e4b121a4a25df8387a193\AndroidManifest.xml:20:5-44
+MERGED from [com.github.rey5137:material:1.2.4] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\6aa58cdb4ac655435b10f2d46f874aa4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.rey5137:material:1.2.4] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\6aa58cdb4ac655435b10f2d46f874aa4\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.mancj:MaterialSearchBar:0.7.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\64eb5e3edc8d0ea5fb637c543c5b3ba7\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.mancj:MaterialSearchBar:0.7.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\64eb5e3edc8d0ea5fb637c543c5b3ba7\AndroidManifest.xml:7:5-9:41
 MERGED from [com.firebaseui:firebase-ui-database:1.2.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\272582922c0204e3477b6590f9672819\AndroidManifest.xml:7:5-9:41
@@ -271,6 +277,8 @@ MERGED from [com.google.firebase:firebase-auth:16.2.1] C:\Users\DELL\.gradle\cac
 MERGED from [com.google.firebase:firebase-auth:16.2.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\2c63db7189890f177e7a85930af3c398\AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\251d6aaec68eddaddec9adea91902673\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\251d6aaec68eddaddec9adea91902673\AndroidManifest.xml:20:5-44
+MERGED from [io.paperdb:paperdb:2.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\60c9d2867f25ca722064e94fc3c00cf9\AndroidManifest.xml:8:5-10:41
+MERGED from [io.paperdb:paperdb:2.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\60c9d2867f25ca722064e94fc3c00cf9\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\d6d6db8d8bfd10f826aff56885911b68\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\d6d6db8d8bfd10f826aff56885911b68\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\ad8505e2e9bf5b2407ca7aefad4604c5\AndroidManifest.xml:20:5-44

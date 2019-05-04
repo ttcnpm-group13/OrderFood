@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.ContextMenu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -53,7 +55,12 @@ public class Cart extends AppCompatActivity {
         btnDatMon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAlertDialog();
+                if(cart.size() > 0) {
+                    showAlertDialog();
+                }
+                else{
+                    Toast.makeText(Cart.this,"Giỏ hàng của bạn đang trống !",Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
@@ -103,11 +110,33 @@ public class Cart extends AppCompatActivity {
     private void loadOrder() {
         cart = new Database(this).getCarts();//lấy thông tin từ database
         adapter =new CartAdapter(cart,this);
+        adapter.notifyDataSetChanged();// cập nhật giao diện khi dữ liệu thay đổi
         recyclerView.setAdapter(adapter);
 
         int total = 0;
         for(Order order:cart)
             total+=(Integer.parseInt(order.getPrice()))*(Integer.parseInt(order.getQuantity()));
             txtTongGia.setText(String.valueOf(total));
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        if(item.getTitle().equals(Hientai.DELETE)){
+            deleteCart(item.getOrder());
+        }
+        return super.onContextItemSelected(item);
+    }
+
+    private void deleteCart( int position) {
+        //Xóa 1 món ăn ở trong giỏ hàng List<Order>
+        cart.remove(position);
+        //Xóa các dữ liệu cũ trong SQlite
+        new Database(this).cleanCart();
+        //Cập nhật lại dữ liệu mới
+        for (Order item:cart){
+            new Database(this).addToCart(item);
+        }
+        //refresh
+        loadOrder();
     }
 }
