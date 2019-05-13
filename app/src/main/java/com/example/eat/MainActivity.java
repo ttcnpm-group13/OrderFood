@@ -1,6 +1,7 @@
 package com.example.eat;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
@@ -20,6 +21,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import io.paperdb.Paper;
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -34,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         txtChao = (TextView)findViewById(R.id.txtChao);
         txtApp = (TextView)findViewById(R.id.txtApp);
         Typeface face1 = Typeface.createFromAsset(getAssets(),"fonts/NABILA.TTF");
-        Typeface face2 = Typeface.createFromAsset(getAssets(),"fonts/VNI-Trung Kien.TTF");
         txtChao.setTypeface(face1);
         txtApp.setTypeface(face1);
 

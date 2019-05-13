@@ -33,6 +33,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.eat.ShowComment" />
         <activity android:name="com.example.eat.OrderStatus" />
         <activity android:name="com.example.eat.Cart" />
         <activity android:name="com.example.eat.FoodDetail" />
@@ -50,10 +51,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
@@ -150,8 +147,8 @@
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <meta-data
-            android:name="android.support.VERSION"
-            android:value="26.1.0" />
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

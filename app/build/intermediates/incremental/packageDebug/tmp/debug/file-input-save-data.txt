@@ -1,24 +1,20 @@
 #Internal package file, do not edit.
-#Sat May 04 02:23:08 ICT 2019
+#Mon May 13 01:55:41 ICT 2019
 2.base=D\:\\Program\\Eat\\app\\build\\intermediates\\merged_assets\\debug\\out
-5.set=ASSET
 0.path=classes.dex
 2.baseType=DIRECTORY
 3.base=D\:\\Program\\Eat\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
 2.set=ASSET
 1.path=fonts/NABILA.TTF
 4.base=D\:\\Program\\Eat\\app\\build\\intermediates\\merged_assets\\debug\\out
-count=6
-5.baseType=DIRECTORY
-2.path=fonts/VNI-Trung Kien.TTF
-5.base=D\:\\Program\\Eat\\app\\build\\intermediates\\merged_assets\\debug\\out
+count=5
+2.path=fonts/cf.otf
 4.set=ASSET
 3.path=classes.dex
 3.baseType=DIRECTORY
 1.set=ASSET
-4.path=fonts/VNI-Yahoo.ttf
+4.path=databases/OrderFoodDB.db
 1.baseType=DIRECTORY
-5.path=databases/OrderFoodDB.db
 0.base=D\:\\Program\\Eat\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 0.baseType=DIRECTORY
 3.set=DEX

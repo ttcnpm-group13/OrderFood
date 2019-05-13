@@ -1,5 +1,6 @@
 package com.example.eat;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -26,6 +27,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import info.hoang8f.widget.FButton;
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class Cart extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -36,9 +39,12 @@ public class Cart extends AppCompatActivity {
     FButton btnDatMon;
     List<Order> cart = new ArrayList<>();
     CartAdapter adapter;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Note: add this code before setContentView method
         setContentView(R.layout.activity_cart);
         //Khởi tạo Fire base cho các yêu cầu đơn hàng
         database = FirebaseDatabase.getInstance();

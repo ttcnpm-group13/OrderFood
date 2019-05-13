@@ -121,7 +121,6 @@ attr buttonBarNegativeButtonStyle
 attr buttonBarNeutralButtonStyle
 attr buttonBarPositiveButtonStyle
 attr buttonBarStyle
-attr buttonColor
 attr buttonGravity
 attr buttonIconDimen
 attr buttonPanelSideLayout
@@ -365,6 +364,7 @@ attr expandedTitleMarginEnd
 attr expandedTitleMarginStart
 attr expandedTitleMarginTop
 attr expandedTitleTextAppearance
+attr fButtonColor
 attr fabAlignmentMode
 attr fabCradleMargin
 attr fabCradleRoundedCornerRadius
@@ -390,6 +390,7 @@ attr firstBaselineToTopHeight
 attr floatingActionButtonStyle
 attr font
 attr fontFamily
+attr fontPath
 attr fontProviderAuthority
 attr fontProviderCerts
 attr fontProviderFetchStrategy
@@ -1270,6 +1271,18 @@ dimen inner_padding_right
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen margin_big
+dimen margin_huge
+dimen margin_humongous
+dimen margin_large
+dimen margin_medium
+dimen margin_mini
+dimen margin_post_medium
+dimen margin_pre_medium
+dimen margin_pre_small
+dimen margin_small
+dimen margin_tiny
+dimen margin_zero
 dimen mtrl_bottomappbar_fabOffsetEndMode
 dimen mtrl_bottomappbar_fab_cradle_margin
 dimen mtrl_bottomappbar_fab_cradle_rounded_corner_radius
@@ -1335,6 +1348,14 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen text_size_big
+dimen text_size_large
+dimen text_size_medium
+dimen text_size_small
+dimen text_size_xlarge
+dimen text_size_xsmall
+dimen text_size_xxlarge
+dimen text_size_xxxlarge
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1429,10 +1450,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
-drawable back_ground
 drawable background
 drawable background_dangnhap
-drawable background_food1
 drawable cart
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -1459,6 +1478,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit_text_background
 drawable food_b
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -1472,12 +1492,6 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_magnify_black_48dp
 drawable ic_menu_black_24dp
-drawable ic_menu_camera
-drawable ic_menu_gallery
-drawable ic_menu_manage
-drawable ic_menu_send
-drawable ic_menu_share
-drawable ic_menu_slideshow
 drawable ic_microphone_black_48dp
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -1485,6 +1499,9 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_refresh_black_24dp
 drawable ic_restaurant_menu_black_24dp
 drawable ic_shopping_cart_black_24dp
+drawable ic_star_black_24dp
+drawable ic_star_empty_48dp
+drawable ic_star_full_48dp
 drawable logofood
 drawable logout
 drawable menu
@@ -1544,6 +1561,11 @@ id afterRelease
 id alertTitle
 id all
 id always
+id app_rate_dialog_comment_edit_text
+id app_rate_dialog_description_text
+id app_rate_dialog_note_description
+id app_rate_dialog_rating_bar
+id app_rate_dialog_title_text
 id async
 id auto
 id bar_layout
@@ -1555,6 +1577,9 @@ id bold
 id bold_italic
 id bottom
 id btnCart
+id btnShowComment
+id btn_quick_cart
+id btn_rating
 id btndangky
 id btndangky1
 id btndangnhap
@@ -1563,6 +1588,7 @@ id btndatmon
 id buffer
 id butt
 id buttonPanel
+id calligraphy_tag_id
 id cancel_action
 id center
 id center_horizontal
@@ -1601,6 +1627,7 @@ id edtmk1
 id edtsdt
 id edtsdt1
 id edtten
+id empty_star_image_view
 id end
 id end_padder
 id enterAlways
@@ -1618,6 +1645,7 @@ id food_description
 id food_name
 id food_price
 id forever
+id full_star_image_view
 id ghost_view
 id gone
 id group_divider
@@ -1655,6 +1683,7 @@ id listCart
 id listMode
 id listOrders
 id list_item
+id listview_background_shape
 id locale
 id ltr
 id marquee
@@ -1717,7 +1746,10 @@ id progress_circular
 id progress_horizontal
 id query
 id radio
+id ratingBar
+id rating_bar_container
 id rectangle
+id recyclerComment
 id recycler_food
 id recycler_menu
 id refresh
@@ -1775,6 +1807,7 @@ id stretch
 id submenuarrow
 id submit_area
 id subtract_btn
+id swipe_layout
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -1804,7 +1837,9 @@ id transition_scene_layoutid_cache
 id transition_transform
 id txtApp
 id txtChao
+id txtComment
 id txtTongGia
+id txtUserPhone
 id txtuserName
 id uniform
 id unlabeled
@@ -1874,8 +1909,11 @@ layout activity_food_list
 layout activity_home
 layout activity_main
 layout activity_order_status
+layout activity_show_comment
 layout app_bar_home
 layout cart_layout
+layout component_app_rate_dialog
+layout component_custom_rating_bar
 layout content_home
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1918,6 +1956,8 @@ layout searchbar
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout show_comment_layout
+layout star_button_layout
 layout support_simple_spinner_dropdown_item
 menu activity_home_drawer
 menu home
@@ -2309,6 +2349,9 @@ style Platform_V21_AppCompat_Light
 style Platform_V25_AppCompat
 style Platform_V25_AppCompat_Light
 style Platform_Widget_AppCompat_Spinner
+style RatingDialogButtonStyle
+style RatingDialogFadeAnim
+style RatingDialogStyle
 style RtlOverlay_DialogWindowTitle_AppCompat
 style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem
 style RtlOverlay_Widget_AppCompat_DialogTitle_Icon
@@ -2326,6 +2369,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style TextAppearance
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2
@@ -2374,6 +2418,10 @@ style TextAppearance_AppCompat_Widget_PopupMenu_Large
 style TextAppearance_AppCompat_Widget_PopupMenu_Small
 style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
+style TextAppearance_AppRatingDialog
+style TextAppearance_AppRatingDialog_Description
+style TextAppearance_AppRatingDialog_NoteLabel
+style TextAppearance_AppRatingDialog_Title
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
 style TextAppearance_Compat_Notification_Info_Media
@@ -2643,7 +2691,7 @@ styleable Dialog android_layout_width android_layout_height di_actionBackground 
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable EditText et_autoCompleteMode et_dividerAnimDuration et_dividerColor et_dividerCompoundPadding et_dividerErrorColor et_dividerHeight et_dividerPadding et_error et_helper et_inputId et_labelEllipsize et_labelEnable et_labelInAnim et_labelOutAnim et_labelPadding et_labelTextAppearance et_labelTextColor et_labelTextSize et_supportEllipsize et_supportLines et_supportMaxChars et_supportMaxLines et_supportMode et_supportPadding et_supportSingleLine et_supportTextAppearance et_supportTextColor et_supportTextErrorColor et_supportTextSize
 styleable ElegantNumberButton backGroundColor backgroundDrawable finalNumber initialNumber textColor textSize
-styleable FButton buttonColor cornerRadius shadowColor shadowEnabled shadowHeight
+styleable FButton cornerRadius fButtonColor shadowColor shadowEnabled shadowHeight
 styleable FloatingActionButton backgroundTint backgroundTintMode borderWidth elevation fabCustomSize fabSize fab_animDuration fab_backgroundAnimDuration fab_backgroundColor fab_elevation fab_iconLineMorphing fab_iconSize fab_iconSrc fab_interpolator fab_radius hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor showMotionSpec useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide
 styleable FlowLayout itemSpacing lineSpacing

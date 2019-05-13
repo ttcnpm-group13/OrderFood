@@ -50,7 +50,10 @@
             android:layout_weight="1"
             android:text="Đăng nhập"
             android:textColor="#FFFFFF"
-            app:shadowHeight="20dp">
+            app:fButtonColor="#4CAF50"
+            app:shadowEnabled="true"
+            app:cornerRadius="15dp"
+            app:shadowHeight="5dp">
 
         </info.hoang8f.widget.FButton>
         <info.hoang8f.widget.FButton
@@ -61,7 +64,10 @@
             android:layout_weight="1"
             android:text="Đăng Ký"
             android:textColor="#FFFFFF"
-            app:shadowHeight="20dp">
+            app:fButtonColor="#009688"
+            app:cornerRadius="15dp"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp">
 
         </info.hoang8f.widget.FButton>
 

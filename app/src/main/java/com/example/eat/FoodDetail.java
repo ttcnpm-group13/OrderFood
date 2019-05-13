@@ -1,5 +1,7 @@
 package com.example.eat;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -7,30 +9,50 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.andremion.counterfab.CounterFab;
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.example.eat.Database.Database;
 import com.example.eat.Hientai.Hientai;
 import com.example.eat.Model.Food;
 import com.example.eat.Model.Order;
+import com.example.eat.Model.Rating;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
+import com.stepstone.apprating.AppRatingDialog;
+import com.stepstone.apprating.listener.RatingDialogListener;
 
-public class FoodDetail extends AppCompatActivity {
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Arrays;
+
+import info.hoang8f.widget.FButton;
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
+public class FoodDetail extends AppCompatActivity implements RatingDialogListener {
     TextView food_name,food_price,food_description;
     ImageView food_image;
     CollapsingToolbarLayout collapsingToolbarLayout;
-    FloatingActionButton btnCart;
+    FloatingActionButton btnRating;
+    CounterFab  btnCart;
     ElegantNumberButton numberButton;
+    RatingBar ratingBar;
+    FButton btnShowComment;
     String foodId = "";
     FirebaseDatabase database;
     DatabaseReference foods;
+    DatabaseReference ratingTbl;
     Food currentFood;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,9 +61,29 @@ public class FoodDetail extends AppCompatActivity {
         //Firebase
         database = FirebaseDatabase.getInstance();
         foods = database.getReference("Food");
+        ratingTbl = database.getReference("Rating");
         //ánh xạ
         numberButton = (ElegantNumberButton)findViewById(R.id.number_button);
-        btnCart = (FloatingActionButton)findViewById(R.id.btnCart);
+        btnCart = (CounterFab) findViewById(R.id.btnCart);
+        btnRating = (FloatingActionButton) findViewById(R.id.btn_rating);
+        ratingBar = (RatingBar)findViewById(R.id.ratingBar);
+        //Hiện bình luận
+        btnShowComment = (FButton)findViewById(R.id.btnShowComment);
+        btnShowComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FoodDetail.this,ShowComment.class);
+                intent.putExtra(Hientai.INTENT_FOOD_ID,foodId);
+                startActivity(intent);
+            }
+        });
+
+        btnRating.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showRatingDialog();
+            }
+        });
         //Tạo sự kiện click cho button thêm hàng vào giỏ
         btnCart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +97,7 @@ public class FoodDetail extends AppCompatActivity {
                 Toast.makeText(FoodDetail.this,"Đã thêm hàng vào giỏ",Toast.LENGTH_SHORT).show();
             }
         });
+        btnCart.setCount(new Database(this).getCountCart());
         food_name = (TextView)findViewById(R.id.food_name);
         food_description=(TextView)findViewById(R.id.food_description);
         food_price=(TextView)findViewById(R.id.food_price);
@@ -71,6 +114,7 @@ public class FoodDetail extends AppCompatActivity {
         if(!foodId.isEmpty() && foodId !=null){
             if(Hientai.isConnectedToInternet(getBaseContext())){
                 getDetailFood(foodId);
+                getRatingFood(foodId);
             }
             else{
                 Toast.makeText(FoodDetail.this,"Vui lòng kiểm tra kết nối Internet",Toast.LENGTH_LONG).show();
@@ -79,6 +123,51 @@ public class FoodDetail extends AppCompatActivity {
         }
 
     }
+
+    private void getRatingFood(String foodId) {
+        Query foodRating = ratingTbl.orderByChild("foodId").equalTo(foodId);
+        foodRating.addValueEventListener(new ValueEventListener() {
+            int count =0,sum = 0;
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for(DataSnapshot postSnapshot:dataSnapshot.getChildren()){
+                    Rating item = postSnapshot.getValue(Rating.class);
+                    sum+=Integer.parseInt(item.getRateValue());
+                    count++;
+                }
+                if(count !=0) {
+                    float average = (float)sum / (float)count;
+                    ratingBar.setRating(average);
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    private void showRatingDialog() {
+        new AppRatingDialog.Builder()
+                .setPositiveButtonText("Đồng ý")
+                .setNegativeButtonText("Hủy")
+                .setNoteDescriptions(Arrays.asList("Quá tệ","Hơi tệ","Tạm được"," Ngon","Rất ngon"))
+                .setDefaultRating(1)
+                .setTitle("Đánh giá món ăn")
+                .setDescription("Hãy đánh giá món ăn và để lại phản hồi")
+                .setTitleTextColor(R.color.colorPrimaryDark)
+                .setDescriptionTextColor(R.color.colorPrimaryDark)
+                .setHint("Nhập bình luận của bạn tại đây")
+                .setHintTextColor(R.color.colorPrimary)
+                .setCommentTextColor(android.R.color.white)
+                .setCommentBackgroundColor(R.color.colorPrimaryDark)
+                .setWindowAnimation(R.style.RatingDialogFadeAnim)
+                .create(FoodDetail.this)
+                .show();
+    }
+
     //Hiển thông thông tin chi tiết món
     private void getDetailFood(String foodId) {
         foods.child(foodId).addValueEventListener(new ValueEventListener() {
@@ -100,5 +189,53 @@ public class FoodDetail extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onNegativeButtonClicked() {
+
+    }
+
+    @Override
+    public void onPositiveButtonClicked(int value, @NotNull String comments) {
+        //Get rating and upload to firebase
+        final Rating rating = new Rating(Hientai.currentUser.getPhone(),
+                foodId,
+                String.valueOf(value),
+                comments);
+        //Fix user can rate multiple times
+        ratingTbl.push()
+                .setValue(rating)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        Toast.makeText(FoodDetail.this,"Cảm ơn bạn đã đánh giá",Toast.LENGTH_SHORT).show();
+                    }
+                });
+        /*
+        ratingTbl.child(Hientai.currentUser.getPhone()).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.child(Hientai.currentUser.getPhone()).exists()){
+                    //Remove Old value
+                    ratingTbl.child(Hientai.currentUser.getPhone()).removeValue();
+                    //Update new Value
+                    ratingTbl.child(Hientai.currentUser.getPhone()).setValue(rating);
+
+                }
+                else{
+                    //Update new Value
+                    ratingTbl.child(Hientai.currentUser.getPhone()).setValue(rating);
+                }
+                Toast.makeText(FoodDetail.this,"Cảm ơn bạn đã đánh giá",Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        */
+
     }
 }

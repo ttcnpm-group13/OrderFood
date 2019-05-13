@@ -70,7 +70,10 @@
         android:layout_alignParentBottom="true"
         android:text="Đăng Ký"
         android:textColor="#FFFFFF"
-        app:shadowHeight="20dp">
+        app:shadowHeight="5dp"
+        app:fButtonColor="#009688"
+        app:cornerRadius="15dp"
+        app:shadowEnabled="true">
     </info.hoang8f.widget.FButton>
 
 </RelativeLayout>

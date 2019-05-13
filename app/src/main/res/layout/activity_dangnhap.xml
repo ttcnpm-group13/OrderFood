@@ -67,7 +67,11 @@
         android:layout_alignParentBottom="true"
         android:text="Đăng nhập"
         android:textColor="#FFFFFF"
-        app:shadowHeight="20dp">
+        app:shadowHeight="5dp"
+        app:fButtonColor="#4CAF50"
+        app:shadowEnabled="true"
+        app:cornerRadius="15dp"
+        >
     </info.hoang8f.widget.FButton>
 
 
