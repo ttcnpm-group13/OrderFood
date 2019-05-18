@@ -1,12 +1,11 @@
 package com.example.eat;
 
-import android.content.Context;
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
+
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -22,26 +21,33 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.andremion.counterfab.CounterFab;
+import com.daimajia.slider.library.Animations.DescriptionAnimation;
+import com.daimajia.slider.library.SliderLayout;
+import com.daimajia.slider.library.SliderTypes.BaseSliderView;
+import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.example.eat.Database.Database;
 import com.example.eat.Hientai.Hientai;
 import com.example.eat.Interface.ItemClickListener;
+import com.example.eat.Model.Banner;
 import com.example.eat.Model.Category;
-import com.example.eat.Model.Order;
 import com.example.eat.ViewHolder.MenuViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
+import java.util.HashMap;
+
 import io.paperdb.Paper;
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -51,6 +57,10 @@ public class Home extends AppCompatActivity
     FirebaseRecyclerAdapter<Category,MenuViewHolder> adapter ;
     SwipeRefreshLayout swipeRefreshLayout;
     CounterFab fab;
+    //Slider
+    HashMap<String,String> image_list;
+    SliderLayout mSlider;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -123,6 +133,54 @@ public class Home extends AppCompatActivity
         //layoutManager = new LinearLayoutManager(this);
         //list_menu.setLayoutManager(layoutManager);
         list_menu.setLayoutManager(new GridLayoutManager(this, 2));
+        //Set up slider
+        setupSlider();
+    }
+
+    private void setupSlider() {
+        mSlider= (SliderLayout)findViewById(R.id.slider);
+        image_list = new HashMap<>();
+        final DatabaseReference banner = FirebaseDatabase.getInstance().getReference("Banner");
+        banner.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for(DataSnapshot postSnapShot:dataSnapshot.getChildren()){
+                    Banner banner = postSnapShot.getValue(Banner.class);
+                    image_list.put(banner.getName()+"@@@"+banner.getId(),banner.getImage());
+                }
+                for(String key:image_list.keySet()){
+                    String[] keySplit = key.split("@@@");
+                    String nameOfFood = keySplit[0];
+                    String idOfFood = keySplit[1];
+                    //Create Slider
+                    final TextSliderView textSliderView = new TextSliderView(getBaseContext());
+                    textSliderView.description(nameOfFood).image(image_list.get(key)).setScaleType(BaseSliderView.ScaleType.Fit)
+                            .setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
+                                @Override
+                                public void onSliderClick(BaseSliderView slider) {
+                                    Intent intent = new Intent(Home.this,FoodDetail.class);
+                                    intent.putExtras(textSliderView.getBundle());
+                                    startActivity(intent);
+                                }
+                            });
+                            //Add Extra bundle
+                            textSliderView.bundle(new Bundle());
+                            textSliderView.getBundle().putString("FoodId",idOfFood);
+                            mSlider.addSlider(textSliderView);
+                            //Remove Event after finish
+                            banner.removeEventListener(this);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        mSlider.setPresetTransformer(SliderLayout.Transformer.Background2Foreground);
+        mSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+        mSlider.setCustomAnimation(new DescriptionAnimation());
+        mSlider.setDuration(4000);
     }
 
 
@@ -176,6 +234,7 @@ public class Home extends AppCompatActivity
         if(adapter != null) {
             adapter.stopListening();
         }
+        mSlider.stopAutoCycle();
     }
 
     @Override

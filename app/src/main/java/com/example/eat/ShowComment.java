@@ -11,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.eat.Database.Database;
 import com.example.eat.Hientai.Hientai;
 import com.example.eat.Model.Rating;
 import com.example.eat.ViewHolder.ShowCommentViewHolder;
@@ -21,8 +20,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class ShowComment extends AppCompatActivity {
     RecyclerView recyclerView;

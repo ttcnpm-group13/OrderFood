@@ -552,6 +552,10 @@
         "source": "D:\\Program\\Eat\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_indicator_layout.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\b3d025941d59ac26d6de803449667acf\\res\\layout\\indicator_layout.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_spinner.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\color-v23\\abc_tint_spinner.xml"
     },
@@ -574,6 +578,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_magnify_black_48dp.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\64eb5e3edc8d0ea5fb637c543c5b3ba7\\res\\drawable-xxhdpi-v4\\ic_magnify_black_48dp.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_render_type_text.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\b3d025941d59ac26d6de803449667acf\\res\\layout\\render_type_text.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar_include.xml.flat",
@@ -650,6 +658,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_color_selector.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\color\\mtrl_btn_text_color_selector.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_indicator_corner_bg.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\b3d025941d59ac26d6de803449667acf\\res\\drawable\\indicator_corner_bg.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_fast_out_linear_in.xml.flat",
@@ -1632,6 +1644,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_render_type_default.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\b3d025941d59ac26d6de803449667acf\\res\\layout\\render_type_default.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
@@ -1666,6 +1682,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_slider_layout.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\b3d025941d59ac26d6de803449667acf\\res\\layout\\slider_layout.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_light.xml.flat",

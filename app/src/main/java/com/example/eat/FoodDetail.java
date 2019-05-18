@@ -1,6 +1,6 @@
 package com.example.eat;
 
-import android.content.Context;
+
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -37,8 +37,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Arrays;
 
 import info.hoang8f.widget.FButton;
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 
 public class FoodDetail extends AppCompatActivity implements RatingDialogListener {
     TextView food_name,food_price,food_description;
@@ -92,7 +91,9 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
                         foodId,
                         currentFood.getName(),
                         numberButton.getNumber(),
-                        currentFood.getPrice()
+                        currentFood.getPrice(),
+                        currentFood.getImage()
+
                 ));
                 Toast.makeText(FoodDetail.this,"Đã thêm hàng vào giỏ",Toast.LENGTH_SHORT).show();
             }

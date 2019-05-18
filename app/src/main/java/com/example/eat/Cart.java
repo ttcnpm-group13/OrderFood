@@ -1,13 +1,13 @@
 package com.example.eat;
 
-import android.content.Context;
+
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.ContextMenu;
+
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
@@ -27,15 +27,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import info.hoang8f.widget.FButton;
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class Cart extends AppCompatActivity {
     RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
     FirebaseDatabase database;
     DatabaseReference requests;
-    TextView txtTongGia;
+     public TextView txtTongGia;
     FButton btnDatMon;
     List<Order> cart = new ArrayList<>();
     CartAdapter adapter;
@@ -118,7 +116,7 @@ public class Cart extends AppCompatActivity {
         adapter =new CartAdapter(cart,this);
         adapter.notifyDataSetChanged();// cập nhật giao diện khi dữ liệu thay đổi
         recyclerView.setAdapter(adapter);
-
+        //Tính tổng giá
         int total = 0;
         for(Order order:cart)
             total+=(Integer.parseInt(order.getPrice()))*(Integer.parseInt(order.getQuantity()));

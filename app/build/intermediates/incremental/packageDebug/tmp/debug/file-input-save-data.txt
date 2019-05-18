@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon May 13 01:55:41 ICT 2019
+#Wed May 15 01:01:24 ICT 2019
 2.base=D\:\\Program\\Eat\\app\\build\\intermediates\\merged_assets\\debug\\out
 0.path=classes.dex
 2.baseType=DIRECTORY

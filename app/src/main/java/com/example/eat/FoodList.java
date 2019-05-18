@@ -1,6 +1,6 @@
 package com.example.eat;
 
-import android.content.Context;
+
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -35,8 +35,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 
 public class FoodList extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -78,6 +77,7 @@ public class FoodList extends AppCompatActivity {
                         return;
                     }
                 }
+
             }
         });
         swipeRefreshLayout.post(new Runnable() {
@@ -95,65 +95,63 @@ public class FoodList extends AppCompatActivity {
                         return;
                     }
                 }
+                //Tìm kiếm
+                materialSearchBar = (MaterialSearchBar)findViewById(R.id.searchBar);
+                materialSearchBar.setHint("Nhập tên món ăn");
+                //materialSearchBar.setSpeechMode(false);
+                loadSuggest(); //Viết hàm để load gợi ý từ Firebase
+                materialSearchBar.setCardViewElevation(10);
+                materialSearchBar.addTextChangeListener(new TextWatcher() {
+                    @Override
+                    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+                    }
+
+                    @Override
+                    public void onTextChanged(CharSequence s, int start, int before, int count) {
+                        //Khi người dùng nhập vào SearchBar danh sách gợi ý sẽ thay đổi theo.
+                        List<String> suggest = new ArrayList<String>();
+                        for(String search:suggestList){ // Vòng lặp suggetList
+                            if(search.toLowerCase().contains(materialSearchBar.getText().toLowerCase()))
+                                suggest.add(search);
+                        }
+                        materialSearchBar.setLastSuggestions(suggest);
+
+                    }
+
+                    @Override
+                    public void afterTextChanged(Editable s) {
+
+                    }
+                });
+                materialSearchBar.setOnSearchActionListener(new MaterialSearchBar.OnSearchActionListener() {
+                    @Override
+                    public void onSearchStateChanged(boolean enabled) {
+                        //Khi Search Bar bị đóng
+                        //Khôi phục adapter ban đầu
+                        if(!enabled)
+                            searchAdapter.startListening();
+                        recyclerView.setAdapter(adapter);
+                    }
+
+                    @Override
+                    public void onSearchConfirmed(CharSequence text) {
+                        //Khi Search hoàn tất
+                        //hiển thị kết quả của searchAdapter
+                        startSearch(text);
+                    }
+
+                    @Override
+                    public void onButtonClicked(int buttonCode) {
+
+                    }
+                });
             }
         });
         recyclerView = (RecyclerView)findViewById(R.id.recycler_food);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
-        //Tìm kiếm
-        materialSearchBar = (MaterialSearchBar)findViewById(R.id.searchBar);
-        materialSearchBar.setHint("Nhập tên món ăn");
-        //materialSearchBar.setSpeechMode(false);
-        loadSuggest(); //Viết hàm để load gợi ý từ Firebase
-        materialSearchBar.setLastSuggestions(suggestList);
-        materialSearchBar.setCardViewElevation(10);
-        materialSearchBar.addTextChangeListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                //Khi người dùng nhập vào SearchBar danh sách gợi ý sẽ thay đổi theo.
-                List<String> suggest = new ArrayList<String>();
-                for(String search:suggestList){ // Vòng lặp suggetList
-                    if(search.toLowerCase().contains(materialSearchBar.getText().toLowerCase()))
-                        suggest.add(search);
-                }
-                materialSearchBar.setLastSuggestions(suggest);
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-        materialSearchBar.setOnSearchActionListener(new MaterialSearchBar.OnSearchActionListener() {
-            @Override
-            public void onSearchStateChanged(boolean enabled) {
-                //Khi Search Bar bị đóng
-                //Khôi phục adapter ban đầu
-                if(!enabled)
-                    searchAdapter.startListening();
-                    recyclerView.setAdapter(adapter);
-            }
-
-            @Override
-            public void onSearchConfirmed(CharSequence text) {
-                //Khi Search hoàn tất
-                //hiển thị kết quả của searchAdapter
-                startSearch(text);
-            }
-
-            @Override
-            public void onButtonClicked(int buttonCode) {
-
-            }
-        });
 
     }
 
@@ -204,6 +202,7 @@ public class FoodList extends AppCompatActivity {
                     suggestList.add(item.getName()); //Thêm tên món ăn vào danh sách gợi ý
 
                 }
+                materialSearchBar.setLastSuggestions(suggestList);
             }
 
             @Override
@@ -236,7 +235,8 @@ public class FoodList extends AppCompatActivity {
                                     adapter.getRef(position).getKey(),
                                     model.getName(),
                                     "1",
-                                    model.getPrice()
+                                    model.getPrice(),
+                                    model.getImage()
                         ));
                         Toast.makeText(FoodList.this, "Đã thêm vào giỏ hàng",Toast.LENGTH_SHORT).show();
                     }

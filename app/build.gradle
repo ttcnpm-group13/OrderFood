@@ -54,7 +54,8 @@ dependencies {
     implementation 'com.cepheuen.elegant-number-button:lib:1.0.2' // button số lượng
     implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
     implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
-    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
 
 }
 apply plugin: 'com.google.gms.google-services'
