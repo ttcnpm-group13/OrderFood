@@ -2,33 +2,46 @@ package com.example.eat;
 
 
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import android.support.v7.widget.helper.ItemTouchHelper;
+import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.LinearLayout;
+
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.eat.Database.Database;
-import com.example.eat.Hientai.Hientai;
+import com.example.eat.Common.Common;
+import com.example.eat.Helper.RecyclerItemTouchHelper;
+import com.example.eat.Interface.RecyclerItemTouchHelperListener;
 import com.example.eat.Model.Order;
 import com.example.eat.Model.Request;
 import com.example.eat.ViewHolder.CartAdapter;
+import com.example.eat.ViewHolder.CartViewHolder;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.rengwuxian.materialedittext.MaterialEditText;
+import com.rey.material.widget.SnackBar;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import info.hoang8f.widget.FButton;
 
-public class Cart extends AppCompatActivity {
+public class Cart extends AppCompatActivity implements RecyclerItemTouchHelperListener {
     RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
     FirebaseDatabase database;
@@ -37,13 +50,23 @@ public class Cart extends AppCompatActivity {
     FButton btnDatMon;
     List<Order> cart = new ArrayList<>();
     CartAdapter adapter;
-
-
+    String address,comment;
+    /*
+    PlacesClient placesClient;
+    Place shippingAddress;
+    List<Place.Field> placeFields = Arrays.asList(Place.Field.ID,
+            Place.Field.NAME,
+            Place.Field.LAT_LNG,
+            Place.Field.ADDRESS);
+    AutocompleteSupportFragment autocompleteSupportFragment;
+*/
+    RelativeLayout rootLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //Note: add this code before setContentView method
         setContentView(R.layout.activity_cart);
+        rootLayout=(RelativeLayout)findViewById(R.id.rootLayout);
         //Khởi tạo Fire base cho các yêu cầu đơn hàng
         database = FirebaseDatabase.getInstance();
         requests = database.getReference("Requests");
@@ -52,6 +75,10 @@ public class Cart extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);//các Item có cùng chiều cao và độ rộng thì ta có thể tối ưu hiệu năng
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+        //Swipe to delete cart
+        ItemTouchHelper.SimpleCallback itemTouchHelperCallBack = new RecyclerItemTouchHelper(0,ItemTouchHelper.LEFT,this);
+        new ItemTouchHelper(itemTouchHelperCallBack).attachToRecyclerView(recyclerView);
+
         //Ánh xạ
         txtTongGia = (TextView)findViewById(R.id.txtTongGia);
         btnDatMon = (FButton)findViewById(R.id.btndatmon);
@@ -74,34 +101,74 @@ public class Cart extends AppCompatActivity {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(Cart.this);
         alertDialog.setTitle("Bước cuối cùng ");
         alertDialog.setMessage("Nhập địa chỉ nhận hàng :");
-        final EditText edtAddress = new EditText(Cart.this);
-        LinearLayout.LayoutParams lP= new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.MATCH_PARENT
-        );
-        edtAddress.setLayoutParams(lP);
-        alertDialog.setView(edtAddress);
+        LayoutInflater inflater = this.getLayoutInflater();
+        View order_address_comment = inflater.inflate(R.layout.order_address_comment,null);
+        final MaterialEditText edtAddress = (MaterialEditText)order_address_comment.findViewById(R.id.edtAddress);
+        final MaterialEditText edtComment = (MaterialEditText)order_address_comment.findViewById(R.id.edtComment);
+        final CheckBox rdiHomeAddress = (CheckBox) order_address_comment.findViewById(R.id.rdiShipToHome);
+        //Event for Checkbox
+        rdiHomeAddress.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    if(Common.currentUser.getHomeAddress() !=null){
+                        address = Common.currentUser.getHomeAddress();
+                        edtAddress.setText(""+address);
+                    }
+                    else{
+                        Toast.makeText(Cart.this,"Vui lòng cập nhật địa chỉ của bạn",Toast.LENGTH_SHORT).show();
+                    }
+                }else {
+                    edtAddress.setText("");
+                }
+            }
+        });
+        alertDialog.setView(order_address_comment);
         alertDialog.setIcon(R.drawable.ic_shopping_cart_black_24dp);
         alertDialog.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+                if(!rdiHomeAddress.isChecked()){
+                    if(edtAddress != null){
+                        address = edtAddress.getText().toString();
+                    }
+                    else{
+                        Toast.makeText(Cart.this,"Vui lòng nhập địa chỉ hoặc chọn địa chỉ của bạn",Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                }
+                if(TextUtils.isEmpty(address)){
+                    Toast.makeText(Cart.this,"Vui lòng nhập địa chỉ hoặc chọn địa chỉ của bạn",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                comment= edtComment.getText().toString();
                 //Tạo mới một yêu cầu
                 Request request = new Request( // tạo mới đối tượng request
-                        Hientai.currentUser.getPhone(),
-                        Hientai.currentUser.getName(),
-                        edtAddress.getText().toString(),
+                        Common.currentUser.getPhone(),
+                        Common.currentUser.getName(),
+                        address,
                         txtTongGia.getText().toString(),
-                        cart
+                        "0",
+                        cart,
+                        comment
                 );
                 //Gửi lên Firebase
                 //Sử dụng System.CurentTimeMilli đến key
                 requests.child(String.valueOf(System.currentTimeMillis()))
                         .setValue(request);
                 //Xóa giỏ hàng
-                new Database(getBaseContext()).cleanCart();
+                new Database(getBaseContext()).cleanCart(Common.currentUser.getPhone());
                 Toast.makeText(Cart.this,"Đơn hàng đã được gửi đi",Toast.LENGTH_SHORT).show();
                 finish();
+                /*
+                //Remove Fragment
+                getSupportFragmentManager().beginTransaction()
+                        .remove(getSupportFragmentManager().findFragmentById(R.id.place_autocomplete_fragment))
+                        .commit();
+                 */
             }
+
+
         });
         alertDialog.setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
             @Override
@@ -111,8 +178,39 @@ public class Cart extends AppCompatActivity {
         });
         alertDialog.show();
     }
+    /*
+    private void initPlaces() {
+        Places.initialize(this,getString(R.string.places_api_key));
+        placesClient = Places.createClient(this);
+
+    }
+
+    private void setupPlaceAutocomplete() {
+        autocompleteSupportFragment =(AutocompleteSupportFragment)getSupportFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
+        //hide search icon before fragment
+        autocompleteSupportFragment.getView().findViewById(R.id.places_autocomplete_search_button).setVisibility(View.GONE);
+        //set hint for autocomplete EditText
+        ((EditText)autocompleteSupportFragment.getView().findViewById(R.id.places_autocomplete_search_input)).setHint("Nhập địa chỉ");
+        //set Text size
+        ((EditText)autocompleteSupportFragment.getView().findViewById(R.id.places_autocomplete_search_input)).setTextSize(20);
+
+        autocompleteSupportFragment.setPlaceFields(placeFields);
+        autocompleteSupportFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
+            @Override
+            public void onPlaceSelected(@NonNull Place place) {
+                shippingAddress = place;
+            }
+
+            @Override
+            public void onError(@NonNull Status status) {
+                Toast.makeText(Cart.this,""+status.getStatusMessage(),Toast.LENGTH_LONG).show();
+            }
+        });
+
+    }
+*/
     private void loadOrder() {
-        cart = new Database(this).getCarts();//lấy thông tin từ database
+        cart = new Database(this).getCarts(Common.currentUser.getPhone());//lấy thông tin từ database
         adapter =new CartAdapter(cart,this);
         adapter.notifyDataSetChanged();// cập nhật giao diện khi dữ liệu thay đổi
         recyclerView.setAdapter(adapter);
@@ -125,7 +223,7 @@ public class Cart extends AppCompatActivity {
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-        if(item.getTitle().equals(Hientai.DELETE)){
+        if(item.getTitle().equals(Common.DELETE)){
             deleteCart(item.getOrder());
         }
         return super.onContextItemSelected(item);
@@ -135,12 +233,46 @@ public class Cart extends AppCompatActivity {
         //Xóa 1 món ăn ở trong giỏ hàng List<Order>
         cart.remove(position);
         //Xóa các dữ liệu cũ trong SQlite
-        new Database(this).cleanCart();
+        new Database(this).cleanCart(Common.currentUser.getPhone());
         //Cập nhật lại dữ liệu mới
         for (Order item:cart){
             new Database(this).addToCart(item);
         }
         //refresh
         loadOrder();
+    }
+
+    @Override
+    public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction, int position) {
+        if(viewHolder instanceof CartViewHolder){
+            String name =((CartAdapter)recyclerView.getAdapter()).getItem(viewHolder.getAdapterPosition()).getProductName();
+            final Order deleteItem =((CartAdapter)recyclerView.getAdapter()).getItem(viewHolder.getAdapterPosition());
+            final int deleteIndex =viewHolder.getAdapterPosition();
+            adapter.removeItem(deleteIndex);
+            new Database(getBaseContext()).removeFromCart(deleteItem.getProductId(),Common.currentUser.getPhone());
+            //Update total price
+            int total = 0;
+            List<Order> orders = new Database(getBaseContext()).getCarts(Common.currentUser.getPhone());
+            for(Order item:orders)
+                total+=(Integer.parseInt(item.getPrice()))*(Integer.parseInt(item.getQuantity()));
+           txtTongGia.setText(String.valueOf(total));
+            //Make Snackbar
+            Snackbar snackbar =Snackbar.make(rootLayout,name +" đã xóa khỏi giỏ hàng!",Snackbar.LENGTH_LONG);
+            snackbar.setAction("Khôi Phục", new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    adapter.restoreItem(deleteItem,deleteIndex);
+                    new Database(getBaseContext()).addToCart(deleteItem);
+                    //Update total price
+                    int total = 0;
+                    List<Order> orders = new Database(getBaseContext()).getCarts(Common.currentUser.getPhone());
+                    for(Order item:orders)
+                        total+=(Integer.parseInt(item.getPrice()))*(Integer.parseInt(item.getQuantity()));
+                    txtTongGia.setText(String.valueOf(total));
+                }
+            });
+            snackbar.setActionTextColor(Color.YELLOW);
+            snackbar.show();
+        }
     }
 }

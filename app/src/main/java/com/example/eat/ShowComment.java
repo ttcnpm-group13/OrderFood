@@ -11,7 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.eat.Hientai.Hientai;
+import com.example.eat.Common.Common;
 import com.example.eat.Model.Rating;
 import com.example.eat.ViewHolder.ShowCommentViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -64,7 +64,7 @@ public class ShowComment extends AppCompatActivity {
             @Override
             public void onRefresh() {
                 if(getIntent() != null){
-                    foodId = getIntent().getStringExtra(Hientai.INTENT_FOOD_ID);
+                    foodId = getIntent().getStringExtra(Common.INTENT_FOOD_ID);
                 }
                 if(!foodId.isEmpty() && foodId != null){
                     Query query = ratingTbl.orderByChild("foodId").equalTo(foodId);
@@ -97,7 +97,7 @@ public class ShowComment extends AppCompatActivity {
             public void run() {
                 mSwipeRefreshLayout.setRefreshing(true);
                 if(getIntent() != null){
-                    foodId = getIntent().getStringExtra(Hientai.INTENT_FOOD_ID);
+                    foodId = getIntent().getStringExtra(Common.INTENT_FOOD_ID);
                 }
                 if(!foodId.isEmpty() && foodId != null) {
                     Query query = ratingTbl.orderByChild("foodId").equalTo(foodId);

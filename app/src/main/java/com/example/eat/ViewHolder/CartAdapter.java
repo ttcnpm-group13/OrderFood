@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.example.eat.Cart;
 import com.example.eat.Database.Database;
-import com.example.eat.Hientai.Hientai;
+import com.example.eat.Common.Common;
 import com.example.eat.Interface.ItemClickListener;
 import com.example.eat.Model.Order;
 import com.example.eat.R;
@@ -23,37 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-class CartViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener,View.OnCreateContextMenuListener {
-    public TextView name_MonDat, price_MonDat;
-    public ElegantNumberButton btn_quantity;
-    public ImageView cart_image;
-    private ItemClickListener itemClickListener;
 
-    public void setName_MonDat(TextView name_MonDat) {
-        this.name_MonDat = name_MonDat;
-    }
-
-    public CartViewHolder(@NonNull View itemView) {
-        super(itemView);
-        //ánh xạ
-        name_MonDat = (TextView) itemView.findViewById(R.id.name_MonDat);
-        price_MonDat = (TextView) itemView.findViewById(R.id.price_MonDat);
-        btn_quantity = (ElegantNumberButton) itemView.findViewById(R.id.btn_quantity);
-        cart_image = (ImageView)itemView.findViewById(R.id.cart_image);
-        itemView.setOnCreateContextMenuListener(this);
-    }
-
-    @Override
-    public void onClick(View v) {
-
-    }
-
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        menu.setHeaderTitle("Lựa chọn thao tác");
-        menu.add(0, 0, getAdapterPosition(), Hientai.DELETE);
-    }
-}
 public class CartAdapter extends RecyclerView.Adapter<CartViewHolder> {
     private List<Order> listData =new ArrayList<>();
     private Cart cart;//ngữ cảnh
@@ -94,7 +64,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartViewHolder> {
                     new Database(cart).updateCart(order);
                     //Update total price
                     int total = 0;
-                    List<Order> orders = new Database(cart).getCarts();
+                    List<Order> orders = new Database(cart).getCarts(Common.currentUser.getPhone());
                     for(Order item:orders)
                      total+=(Integer.parseInt(item.getPrice()))*(Integer.parseInt(item.getQuantity()));
                     cart.txtTongGia.setText(String.valueOf(total));
@@ -113,5 +83,15 @@ public class CartAdapter extends RecyclerView.Adapter<CartViewHolder> {
     public int getItemCount() {
         return listData.size();
     }
-
+    public Order getItem(int position){
+        return listData.get(position);
+    }
+    public void removeItem(int position){
+        listData.remove(position);
+        notifyItemRemoved(position);
+    }
+    public void restoreItem(Order item,int position){
+        listData.add(position,item);
+        notifyItemInserted(position);
+    }
 }

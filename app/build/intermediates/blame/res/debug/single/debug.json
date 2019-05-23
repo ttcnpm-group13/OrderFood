@@ -112,6 +112,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_accountkit_code_fb.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-mdpi-v4\\com_accountkit_code_fb.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\2f9c03f0ac85b1701a5e98a9af6ba7a0\\res\\layout\\notification_template_part_time.xml"
     },
@@ -126,6 +130,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_expand_spec.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\animator\\mtrl_fab_transformation_sheet_expand_spec.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_send_icon_blue.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\5d7d36f140cba65d72106ccee26a5937\\res\\drawable-hdpi-v4\\com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -158,6 +166,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\2f9c03f0ac85b1701a5e98a9af6ba7a0\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_accountkit_code_fb.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xxhdpi-v4\\com_accountkit_code_fb.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_title_material.xml.flat",
@@ -214,6 +226,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_share_black_24dp.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\ic_share_black_24dp.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -320,12 +336,28 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_com_accountkit_input_cursor.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-v21\\com_accountkit_input_cursor.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_com_facebook_send_button_text_color.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\5d7d36f140cba65d72106ccee26a5937\\res\\color\\com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_account_box_black_24dp.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\ic_account_box_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_button_send_icon_blue.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\5d7d36f140cba65d72106ccee26a5937\\res\\drawable-xhdpi-v4\\com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -340,6 +372,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_accountkit_device.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xhdpi-v4\\com_accountkit_device.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_layout.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\layout\\abc_list_menu_item_layout.xml"
     },
@@ -350,6 +386,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_tooltip_enter.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\anim\\abc_tooltip_enter.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_icon_white.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-hdpi-v4\\com_facebook_button_icon_white.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_fast_out_slow_in.xml.flat",
@@ -386,6 +426,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_phone_country_code_layout.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_phone_country_code_layout.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -428,6 +472,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_email_login_text.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_email_login_text.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark_normal.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
     },
@@ -456,6 +504,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_accountkit_spinner_triangle.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xxhdpi-v4\\com_accountkit_spinner_triangle.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_chip_state_list_anim.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\animator\\mtrl_chip_state_list_anim.xml"
     },
@@ -470,6 +522,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_accountkit_device.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xxhdpi-v4\\com_accountkit_device.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -512,6 +568,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_close.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-xhdpi-v4\\com_facebook_close.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
@@ -526,6 +586,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_light.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_title.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_title.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -546,6 +610,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_com_accountkit_code_fb.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xxxhdpi-v4\\com_accountkit_code_fb.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
@@ -600,8 +668,16 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\2f9c03f0ac85b1701a5e98a9af6ba7a0\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_close.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-hdpi-v4\\com_facebook_close.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_home_address_layout.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\layout\\home_address_layout.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -626,6 +702,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_activity_layout.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\layout\\com_facebook_activity_layout.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_dots_vertical_black_48dp.png.flat",
@@ -656,8 +736,20 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_phone_login_bottom.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_phone_login_bottom.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_email_verify_bottom.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_email_verify_bottom.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_color_selector.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\color\\mtrl_btn_text_color_selector.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_phone_login_text.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_phone_login_text.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_indicator_corner_bg.xml.flat",
@@ -680,8 +772,16 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_accountkit_check_sms.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xxhdpi-v4\\com_accountkit_check_sms.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_send_icon_white.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\5d7d36f140cba65d72106ccee26a5937\\res\\drawable-hdpi-v4\\com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_menu_food.xml.flat",
@@ -708,8 +808,16 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\color\\mtrl_chip_close_icon_tint.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_icon_white.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-mdpi-v4\\com_facebook_button_icon_white.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "D:\\Program\\Eat\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_accountkit_get_call.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-mdpi-v4\\com_accountkit_get_call.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
@@ -736,6 +844,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\layout-v26\\abc_screen_toolbar.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_icon_blue.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-hdpi-v4\\com_facebook_button_icon_blue.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
     },
@@ -752,6 +864,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\fadd50812459c39cb90f05aed16b1da0\\res\\drawable-xhdpi\\met_ic_clear.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_auth_dialog_cancel_background.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable\\com_facebook_auth_dialog_cancel_background.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu_item.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\layout\\design_navigation_menu_item.xml"
     },
@@ -762,6 +878,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "D:\\Program\\Eat\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_button_icon_white.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-xhdpi-v4\\com_facebook_button_icon_white.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
@@ -812,8 +932,16 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_error_bottom.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_error_bottom.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\d9786822f5bb85be9aeb61bcf9ad5574\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\anim_com_accountkit_progress_complete_check_anim.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\anim\\com_accountkit_progress_complete_check_anim.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -856,6 +984,14 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\64eb5e3edc8d0ea5fb637c543c5b3ba7\\res\\drawable-hdpi-v4\\ic_microphone_black_48dp.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_button_icon_blue.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-xhdpi-v4\\com_facebook_button_icon_blue.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_facebook_button_icon_white.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-xxhdpi-v4\\com_facebook_button_icon_white.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\drawable-xxxhdpi-v4\\design_ic_visibility_off.png"
     },
@@ -866,6 +1002,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_accountkit_email.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable\\com_accountkit_email.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -886,6 +1026,14 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_show_comment.xml.flat",
         "source": "D:\\Program\\Eat\\app\\src\\main\\res\\layout\\activity_show_comment.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_confirmation_code_bottom.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_confirmation_code_bottom.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_button_send_icon_white.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\5d7d36f140cba65d72106ccee26a5937\\res\\drawable-xhdpi-v4\\com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_cascading_menu_item_layout.xml.flat",
@@ -932,12 +1080,20 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_email_verify_center.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_email_verify_center.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\2f9c03f0ac85b1701a5e98a9af6ba7a0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\2f9c03f0ac85b1701a5e98a9af6ba7a0\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_error_center.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_error_center.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_tabs_default_indicator.xml.flat",
@@ -960,12 +1116,20 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_login_fragment.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\layout\\com_facebook_login_fragment.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\xml_nav_states.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\6aa58cdb4ac655435b10f2d46f874aa4\\res\\xml\\nav_states.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_accountkit_device.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-hdpi-v4\\com_accountkit_device.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1004,6 +1168,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_accountkit_spinner_triangle.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-mdpi-v4\\com_accountkit_spinner_triangle.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\2f9c03f0ac85b1701a5e98a9af6ba7a0\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
@@ -1036,8 +1204,16 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_phone_country_code_item_layout.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_phone_country_code_item_layout.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_confirmation_code_top.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_confirmation_code_top.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -1060,6 +1236,10 @@
         "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\menu.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_accountkit_progress_ring.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable\\com_accountkit_progress_ring.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\layout\\abc_screen_simple.xml"
     },
@@ -1080,12 +1260,24 @@
         "source": "D:\\Program\\Eat\\app\\src\\main\\res\\layout\\activity_cart.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_send_background.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\5d7d36f140cba65d72106ccee26a5937\\res\\drawable\\com_facebook_button_send_background.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_fab_ripple_color.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\color\\mtrl_fab_ripple_color.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_close.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-mdpi-v4\\com_facebook_close.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_favicon_blue.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable\\com_facebook_favicon_blue.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1120,12 +1312,24 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_accountkit_spinner_triangle.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-hdpi-v4\\com_accountkit_spinner_triangle.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_device_auth_dialog_fragment.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_phone_login_top.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_phone_login_top.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -1180,12 +1384,20 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_smart_device_dialog_fragment.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_star_full_48dp.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\5be8e4a57d0fe2179d40118b65b87d4b\\res\\drawable\\ic_star_full_48dp.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_com_facebook_button_text_color.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\color\\com_facebook_button_text_color.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_home.xml.flat",
@@ -1196,12 +1408,12 @@
         "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\ic_refresh_black_24dp.xml"
     },
     {
-        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\2f9c03f0ac85b1701a5e98a9af6ba7a0\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -1232,6 +1444,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_sent_code_center.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_sent_code_center.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -1250,6 +1466,14 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_close_black_48dp.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\64eb5e3edc8d0ea5fb637c543c5b3ba7\\res\\drawable-xxhdpi-v4\\ic_close_black_48dp.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_security_black_24dp.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\ic_security_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_dialog_title_material.xml.flat",
@@ -1280,6 +1504,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_com_accountkit_check_sms.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xxxhdpi-v4\\com_accountkit_check_sms.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_common_google_signin_btn_text_dark_normal.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\251d6aaec68eddaddec9adea91902673\\res\\drawable-watch-v20\\common_google_signin_btn_text_dark_normal.xml"
     },
@@ -1300,6 +1528,14 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\interpolator-v21\\mtrl_linear_out_slow_in.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_dmax_spots_spot.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\a412bde995bf11e54f93194426fa8d42\\res\\drawable-v21\\dmax_spots_spot.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_accountkit_get_call.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xxhdpi-v4\\com_accountkit_get_call.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\drawable-xhdpi-v4\\common_full_open_on_phone.png"
     },
@@ -1310,6 +1546,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_accountkit_check_sms.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xhdpi-v4\\com_accountkit_check_sms.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -1336,32 +1576,36 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\d9786822f5bb85be9aeb61bcf9ad5574\\res\\layout\\notification_template_media_custom.xml"
     },
     {
-        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_arrow_left_black_48dp.png.flat",
-        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\64eb5e3edc8d0ea5fb637c543c5b3ba7\\res\\drawable-xxhdpi-v4\\ic_arrow_left_black_48dp.png"
-    },
-    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_arrow_left_black_48dp.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\64eb5e3edc8d0ea5fb637c543c5b3ba7\\res\\drawable-xxhdpi-v4\\ic_arrow_left_black_48dp.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_auth_dialog_header_background.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable\\com_facebook_auth_dialog_header_background.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_snackbar_background.xml.flat",
-        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\drawable\\mtrl_snackbar_background.xml"
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_snackbar_background.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\drawable\\mtrl_snackbar_background.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
@@ -1384,12 +1628,24 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_resend_bottom.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_resend_bottom.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_close_black_48dp.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\64eb5e3edc8d0ea5fb637c543c5b3ba7\\res\\drawable-hdpi-v4\\ic_close_black_48dp.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_accountkit_pencil.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable\\com_accountkit_pencil.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back_white.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable\\ic_arrow_back_white.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
@@ -1408,12 +1664,24 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_com_accountkit_progress_complete.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-v21\\com_accountkit_progress_complete.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_hide_password.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_confirmation_code_center.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_confirmation_code_center.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-xhdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_list_divider_material.xml.flat",
@@ -1440,6 +1708,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\layout-sw600dp-v13\\mtrl_layout_snackbar.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_accountkit_spinner_triangle.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xhdpi-v4\\com_accountkit_spinner_triangle.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_common_google_signin_btn_text_light_normal.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\251d6aaec68eddaddec9adea91902673\\res\\drawable-watch-v20\\common_google_signin_btn_text_light_normal.xml"
     },
@@ -1464,12 +1736,16 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\anim\\abc_popup_enter.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_cart_layout.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\layout\\cart_layout.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\2f9c03f0ac85b1701a5e98a9af6ba7a0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_cart_layout.xml.flat",
-        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\layout\\cart_layout.xml"
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_dmax_spots_dialog.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\a412bde995bf11e54f93194426fa8d42\\res\\layout\\dmax_spots_dialog.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1484,6 +1760,10 @@
         "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\cart.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\anim_com_accountkit_progress_complete_circle_anim.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\anim\\com_accountkit_progress_complete_circle_anim.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\layout\\abc_action_menu_item_layout.xml"
     },
@@ -1496,12 +1776,20 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_com_accountkit_device.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xxxhdpi-v4\\com_accountkit_device.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_auth_dialog_background.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable\\com_facebook_auth_dialog_background.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_stroke_color_selector.xml.flat",
@@ -1522,6 +1810,14 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_verified_code_center.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_verified_code_center.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_email_login_center.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_email_login_center.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1580,6 +1876,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\animator\\mtrl_fab_transformation_sheet_collapse_spec.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_background.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable\\com_facebook_button_background.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
@@ -1622,6 +1922,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_radio.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_facebook_button_send_icon_white.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\5d7d36f140cba65d72106ccee26a5937\\res\\drawable-xxhdpi-v4\\com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -1676,6 +1980,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_like_icon_selected.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-mdpi-v4\\com_facebook_button_like_icon_selected.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\d9786822f5bb85be9aeb61bcf9ad5574\\res\\layout\\notification_media_action.xml"
     },
@@ -1686,6 +1994,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_slider_layout.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\b3d025941d59ac26d6de803449667acf\\res\\layout\\slider_layout.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_like_icon_selected.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-hdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_light.xml.flat",
@@ -1712,6 +2024,14 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\d9786822f5bb85be9aeb61bcf9ad5574\\res\\layout\\notification_template_big_media_custom.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_sending_code_center.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_sending_code_center.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_send_button_icon.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\5d7d36f140cba65d72106ccee26a5937\\res\\drawable\\com_facebook_send_button_icon.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_light.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\color\\abc_primary_text_material_light.xml"
     },
@@ -1728,8 +2048,20 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable\\tooltip_frame_dark.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_accountkit_get_call.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-hdpi-v4\\com_accountkit_get_call.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-xxhdpi-v4\\com_facebook_button_like_icon_selected.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_send_icon_blue.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\5d7d36f140cba65d72106ccee26a5937\\res\\drawable-mdpi-v4\\com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -1776,6 +2108,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_accountkit_device.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-mdpi-v4\\com_accountkit_device.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
@@ -1806,6 +2142,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_accountkit_check_sms.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-hdpi-v4\\com_accountkit_check_sms.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_normal.xml.flat",
@@ -1848,6 +2188,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\color\\mtrl_btn_ripple_color.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_accountkit_error.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable\\com_accountkit_error.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_separator.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\layout\\design_navigation_item_separator.xml"
     },
@@ -1858,6 +2202,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\d9786822f5bb85be9aeb61bcf9ad5574\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_accountkit_code_fb.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xhdpi-v4\\com_accountkit_code_fb.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_text_cursor_material.xml.flat",
@@ -1892,6 +2240,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\anim\\design_snackbar_in.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_confirmation_code_input.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_confirmation_code_input.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
     },
@@ -1922,6 +2274,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_dark.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_accountkit_code_fb.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-hdpi-v4\\com_accountkit_code_fb.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility.png.flat",
@@ -1968,6 +2324,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_icon.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable\\com_facebook_button_icon.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_searchbar.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\64eb5e3edc8d0ea5fb637c543c5b3ba7\\res\\layout\\searchbar.xml"
     },
@@ -1994,6 +2354,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_menu_black_24dp.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\64eb5e3edc8d0ea5fb637c543c5b3ba7\\res\\drawable-xxhdpi-v4\\ic_menu_black_24dp.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_like_background.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable\\com_facebook_button_like_background.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
@@ -2036,12 +2400,12 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\color\\mtrl_tabs_icon_color_selector_colored.xml"
     },
     {
-        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_edittext.xml.flat",
@@ -2052,12 +2416,20 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_com_accountkit_get_call.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xxxhdpi-v4\\com_accountkit_get_call.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_tint.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\color\\common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_accountkit_check_sms.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-mdpi-v4\\com_accountkit_check_sms.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
@@ -2080,12 +2452,12 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\drawable-v21\\design_password_eye.xml"
     },
     {
-        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
-    },
-    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple_overlay_action_mode.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_color_highlight_material.xml.flat",
@@ -2148,12 +2520,20 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_order_address_comment.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\layout\\order_address_comment.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_indicator_material.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_information.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\layout\\activity_information.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_dark.xml.flat",
@@ -2172,12 +2552,12 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
-        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_bottom.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_title_item.xml.flat",
@@ -2186,6 +2566,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_update_name_layout.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\layout\\update_name_layout.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -2220,6 +2604,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_static_content.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_static_content.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
@@ -2246,6 +2634,14 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_verifying_code_center.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_verifying_code_center.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_accountkit_get_call.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xhdpi-v4\\com_accountkit_get_call.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_text_btn_text_color_selector.xml.flat",
@@ -2284,6 +2680,10 @@
         "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\ic_restaurant_menu_black_24dp.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_send_icon_white.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\5d7d36f140cba65d72106ccee26a5937\\res\\drawable-mdpi-v4\\com_facebook_button_send_icon_white.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
@@ -2300,6 +2700,14 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_accountkit_progress_complete_vector.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable\\com_accountkit_progress_complete_vector.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_facebook_button_icon_blue.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-xxhdpi-v4\\com_facebook_button_icon_blue.png"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
@@ -2308,8 +2716,20 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_phone_login_center.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_phone_login_center.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_activity_layout.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_activity_layout.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_email_login_top.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_email_login_top.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
@@ -2318,6 +2738,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_com_accountkit_spinner_triangle.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\drawable-xxxhdpi-v4\\com_accountkit_spinner_triangle.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -2342,6 +2766,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_accountkit_fragment_email_login_bottom.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\layout\\com_accountkit_fragment_email_login_bottom.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
@@ -2394,6 +2822,14 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_linear.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\interpolator\\mtrl_linear.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delete_black_24dp.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\ic_delete_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_icon_blue.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\713c30d03fd23d9b0213278c4b6ec2a4\\res\\drawable-mdpi-v4\\com_facebook_button_icon_blue.png"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",

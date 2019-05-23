@@ -1,12 +1,14 @@
 package com.example.eat;
 
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.annotation.NonNull;
 
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -29,24 +31,30 @@ import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
+import com.example.eat.Common.Common;
 import com.example.eat.Database.Database;
-import com.example.eat.Hientai.Hientai;
 import com.example.eat.Interface.ItemClickListener;
 import com.example.eat.Model.Banner;
 import com.example.eat.Model.Category;
 import com.example.eat.ViewHolder.MenuViewHolder;
+import com.facebook.accountkit.AccountKit;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.rengwuxian.materialedittext.MaterialEditText;
 import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
+import java.util.Map;
 
-import io.paperdb.Paper;
+import dmax.dialog.SpotsDialog;
+
 
 
 public class Home extends AppCompatActivity
@@ -78,7 +86,7 @@ public class Home extends AppCompatActivity
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                if (Hientai.isConnectedToInternet(getBaseContext())){
+                if (Common.isConnectedToInternet(getBaseContext())){
                     Load_menu();
                 }else{
                     Toast.makeText(getBaseContext(),"Vui lòng kiểm tra kết nối Internet",Toast.LENGTH_LONG).show();
@@ -90,7 +98,7 @@ public class Home extends AppCompatActivity
         swipeRefreshLayout.post(new Runnable() {
             @Override
             public void run() {
-                if (Hientai.isConnectedToInternet(getBaseContext())){
+                if (Common.isConnectedToInternet(getBaseContext())){
                     Load_menu();
                 }else{
                     Toast.makeText(getBaseContext(),"Vui lòng kiểm tra kết nối Internet",Toast.LENGTH_LONG).show();
@@ -101,7 +109,7 @@ public class Home extends AppCompatActivity
 
         //khai bao du lieu tu database
         category= FirebaseDatabase.getInstance().getReference("Category");
-        Paper.init(this);
+        //Paper.init(this);
 
         fab = (CounterFab) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -112,7 +120,7 @@ public class Home extends AppCompatActivity
                 startActivity(cartIntent);
             }
         });
-        fab.setCount(new Database (this).getCountCart());
+        fab.setCount(new Database (this).getCountCart(Common.currentUser.getPhone()));
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -125,7 +133,7 @@ public class Home extends AppCompatActivity
         //Hiển thị tên user trên navigation
         View headerview = navigationView.getHeaderView(0);
         txtuserName= (TextView)headerview.findViewById(R.id.txtuserName);
-        txtuserName.setText(Hientai.currentUser.getName());
+        txtuserName.setText(Common.currentUser.getName());
         //Tải lên danh sách món
         list_menu = (RecyclerView)findViewById(R.id.recycler_menu);
         list_menu.setHasFixedSize(true);
@@ -223,10 +231,12 @@ public class Home extends AppCompatActivity
     @Override
     protected void onResume() {
         super.onResume();
-        fab.setCount(new Database (this).getCountCart());
+        fab.setCount(new Database (this).getCountCart(Common.currentUser.getPhone()));
         if(adapter != null)
             adapter.startListening();
+        mSlider.startAutoCycle();
     }
+
 
         @Override
     protected void onStop() {
@@ -270,7 +280,8 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_menu) {
-            // Handle the camera action
+            Intent infoIntent = new Intent(Home.this,Information.class);
+            startActivity(infoIntent);
         } else if (id == R.id.nav_donhang) {
             Intent orderIntent = new Intent(Home.this, OrderStatus.class);
             startActivity(orderIntent);
@@ -279,15 +290,108 @@ public class Home extends AppCompatActivity
             startActivity(cartIntent);
         } else if (id == R.id.nav_dangxuat) {
             //Xóa user và password đã ghi nhớ
-            Paper.book().destroy();
+            //Paper.book().destroy();
             //Logout
+            /*
             Intent signIn = new Intent(Home.this,Dangnhap.class);
             signIn.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(signIn);
+            */
+            AccountKit.logOut();
+            Intent intent = new Intent(Home.this,MainActivity.class);
+            startActivity(intent);
+        }else if(id == R.id.nav_update_name){
+            updateName();
+        }else if(id == R.id.nav_home_address){
+            updateHomeAddress();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void updateHomeAddress() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(Home.this);
+        alertDialog.setTitle("Cập nhật địa chỉ");
+        alertDialog.setMessage("Vui lòng điển đủ thông tin");
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View layout_address = inflater.inflate(R.layout.home_address_layout,null);
+        final MaterialEditText edtHomeAddress =(MaterialEditText)layout_address.findViewById(R.id.edtHomeAddress);
+        alertDialog.setView(layout_address);
+        alertDialog.setPositiveButton("Cập nhật", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                final android.app.AlertDialog waitingDialog = new SpotsDialog.Builder().setContext(Home.this).build();
+                waitingDialog.show();
+                Common.currentUser.setHomeAddress(edtHomeAddress.getText().toString());
+                //Update address
+                Map<String,Object> update_address = new HashMap<>();
+                update_address.put("homeAddress",edtHomeAddress.getText().toString());
+                FirebaseDatabase.getInstance().getReference("User")
+                        .child(Common.currentUser.getPhone())
+                        .updateChildren(update_address)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                //dismiss dialog
+                                waitingDialog.dismiss();
+                                if(task.isSuccessful()){
+                                    Toast.makeText(Home.this,"Địa chỉ đã cập nhật",Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+
+            }
+        });
+        alertDialog.setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        alertDialog.show();
+    }
+
+    private void updateName() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(Home.this);
+        alertDialog.setTitle("Cập nhật tên");
+        alertDialog.setMessage("Vui lòng điển đủ thông tin");
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View layout_name = inflater.inflate(R.layout.update_name_layout,null);
+        final MaterialEditText edtName =(MaterialEditText)layout_name.findViewById(R.id.edtName);
+        alertDialog.setView(layout_name);
+        alertDialog.setPositiveButton("Cập nhật", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                final android.app.AlertDialog waitingDialog = new SpotsDialog.Builder().setContext(Home.this).build();
+                waitingDialog.show();
+                Common.currentUser.setName(edtName.getText().toString());
+                //Update name
+                Map<String,Object> update_name = new HashMap<>();
+                update_name.put("name",edtName.getText().toString());
+                FirebaseDatabase.getInstance().getReference("User")
+                        .child(Common.currentUser.getPhone())
+                        .updateChildren(update_name)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                //dismiss dialog
+                                waitingDialog.dismiss();
+                                if(task.isSuccessful()){
+                                    Toast.makeText(Home.this,"Tên đã cập nhật",Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+
+            }
+        });
+        alertDialog.setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        alertDialog.show();
     }
 }

@@ -15,8 +15,8 @@ import android.widget.Toast;
 
 import com.andremion.counterfab.CounterFab;
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
+import com.example.eat.Common.Common;
 import com.example.eat.Database.Database;
-import com.example.eat.Hientai.Hientai;
 import com.example.eat.Model.Food;
 import com.example.eat.Model.Order;
 import com.example.eat.Model.Rating;
@@ -72,7 +72,7 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FoodDetail.this,ShowComment.class);
-                intent.putExtra(Hientai.INTENT_FOOD_ID,foodId);
+                intent.putExtra(Common.INTENT_FOOD_ID,foodId);
                 startActivity(intent);
             }
         });
@@ -88,6 +88,7 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
             @Override
             public void onClick(View v) {
                 new Database(getBaseContext()).addToCart(new Order(
+                        Common.currentUser.getPhone(),
                         foodId,
                         currentFood.getName(),
                         numberButton.getNumber(),
@@ -98,7 +99,7 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
                 Toast.makeText(FoodDetail.this,"Đã thêm hàng vào giỏ",Toast.LENGTH_SHORT).show();
             }
         });
-        btnCart.setCount(new Database(this).getCountCart());
+        btnCart.setCount(new Database(this).getCountCart(Common.currentUser.getPhone()));
         food_name = (TextView)findViewById(R.id.food_name);
         food_description=(TextView)findViewById(R.id.food_description);
         food_price=(TextView)findViewById(R.id.food_price);
@@ -113,7 +114,7 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
             foodId= getIntent().getStringExtra("FoodId");
         }
         if(!foodId.isEmpty() && foodId !=null){
-            if(Hientai.isConnectedToInternet(getBaseContext())){
+            if(Common.isConnectedToInternet(getBaseContext())){
                 getDetailFood(foodId);
                 getRatingFood(foodId);
             }
@@ -200,7 +201,7 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
     @Override
     public void onPositiveButtonClicked(int value, @NotNull String comments) {
         //Get rating and upload to firebase
-        final Rating rating = new Rating(Hientai.currentUser.getPhone(),
+        final Rating rating = new Rating(Common.currentUser.getPhone(),
                 foodId,
                 String.valueOf(value),
                 comments);
@@ -214,19 +215,19 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
                     }
                 });
         /*
-        ratingTbl.child(Hientai.currentUser.getPhone()).addValueEventListener(new ValueEventListener() {
+        ratingTbl.child(Common.currentUser.getPhone()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.child(Hientai.currentUser.getPhone()).exists()){
+                if(dataSnapshot.child(Common.currentUser.getPhone()).exists()){
                     //Remove Old value
-                    ratingTbl.child(Hientai.currentUser.getPhone()).removeValue();
+                    ratingTbl.child(Common.currentUser.getPhone()).removeValue();
                     //Update new Value
-                    ratingTbl.child(Hientai.currentUser.getPhone()).setValue(rating);
+                    ratingTbl.child(Common.currentUser.getPhone()).setValue(rating);
 
                 }
                 else{
                     //Update new Value
-                    ratingTbl.child(Hientai.currentUser.getPhone()).setValue(rating);
+                    ratingTbl.child(Common.currentUser.getPhone()).setValue(rating);
                 }
                 Toast.makeText(FoodDetail.this,"Cảm ơn bạn đã đánh giá",Toast.LENGTH_SHORT).show();
             }

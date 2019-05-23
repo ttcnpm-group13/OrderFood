@@ -14,7 +14,7 @@ import android.widget.EditText;
 
 import android.widget.Toast;
 
-import com.example.eat.Hientai.Hientai;
+import com.example.eat.Common.Common;
 import com.example.eat.Model.User;
 
 import com.google.firebase.database.DataSnapshot;
@@ -23,8 +23,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.rengwuxian.materialedittext.MaterialEditText;
-
-import io.paperdb.Paper;
 
 
 public class Dangnhap extends AppCompatActivity {
@@ -41,7 +39,7 @@ public class Dangnhap extends AppCompatActivity {
         btndangnhap1=(Button)findViewById(R.id.btndangnhap1);
         ckbRemember=(CheckBox)findViewById(R.id.ckbRemember);
         //Khoi tao Paper
-        Paper.init(this);
+        //Paper.init(this);
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference table_user = database.getReference("User");
@@ -50,12 +48,14 @@ public class Dangnhap extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Kiểm tra kết nối Internet
-                if(Hientai.isConnectedToInternet(getBaseContext())){
+                if(Common.isConnectedToInternet(getBaseContext())){
                     //Lưu tên đăng nhập và mật khẩu
+                    /*
                     if(ckbRemember.isChecked()){
-                        Paper.book().write(Hientai.USER_KEY,edtsdt.getText().toString());
-                        Paper.book().write(Hientai.PWD_KEY,edtmk.getText().toString());
+                        Paper.book().write(Common.USER_KEY,edtsdt.getText().toString());
+                        Paper.book().write(Common.PWD_KEY,edtmk.getText().toString());
                     }
+                    */
                     final ProgressDialog process = new ProgressDialog(Dangnhap.this);
                     process.setMessage("Vui lòng đợi");
                     process.show();
@@ -75,7 +75,7 @@ public class Dangnhap extends AppCompatActivity {
                                 else if (user.getPassword().equals(edtmk.getText().toString())) {
                                     Toast.makeText(Dangnhap.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                                     Intent homeIntent = new Intent(Dangnhap.this,Home.class);
-                                    Hientai.currentUser = user;
+                                    Common.currentUser = user;
                                     startActivity(homeIntent);
                                     finish();//Chuyển qua activity mới và hủy activity hiện tại
 

@@ -5,6 +5,7 @@ public class User {
     private String Password;
     private String Phone;
     private String IsStaff;
+    private String homeAddress;
     public User(){
     }
     public User(String Name, String Password) {
@@ -43,5 +44,13 @@ public class User {
 
     public void setPassword(String Password) {
         this.Password = Password;
+    }
+
+    public String getHomeAddress() {
+        return homeAddress;
+    }
+
+    public void setHomeAddress(String homeAddress) {
+        this.homeAddress = homeAddress;
     }
 }

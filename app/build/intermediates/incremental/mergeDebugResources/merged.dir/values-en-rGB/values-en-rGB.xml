@@ -27,6 +27,28 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Share with"</string>
     <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"Share with <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Collapse"</string>
+    <string gender="unknown" name="com_accountkit_button_resend_code_in">Send SMS again in %1$d</string>
+    <string gender="unknown" name="com_accountkit_button_send_code_in_fb_details">The code will arrive as a Facebook notification</string>
+    <string gender="unknown" name="com_accountkit_check_email">Open your email</string>
+    <string gender="unknown" name="com_accountkit_confirmation_code_agreement_app_privacy_policy">Tap %1$s to accept Facebook\'s &lt;a href=%2$s>Terms&lt;/a>, &lt;a href=%3$s>Data Policy&lt;/a> and &lt;a href=%4$s>cookie use&lt;/a>, and the &lt;a href=%5$s>Privacy Policy&lt;/a> of %6$s.</string>
+    <string gender="unknown" name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms">Tap %1$s to accept Facebook\'s &lt;a href=%2$s>Terms&lt;/a>, &lt;a href=%3$s>Data Policy&lt;/a> and &lt;a href=%4$s>cookie use&lt;/a>, and the &lt;a href=%5$s>Privacy Policy&lt;/a> and &lt;a href=%6$s>Terms of Service&lt;/a> of %7$s.</string>
+    <string gender="unknown" name="com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms_instant_verification">Tap %1$s to accept Facebook\'s &lt;a href=%2$s>Terms&lt;/a>, &lt;a href=%3$s>Data Policy&lt;/a> and &lt;a href=%4$s>cookie use&lt;/a>, and the &lt;a href=%5$s>Privacy Policy&lt;/a> and &lt;a href=%6$s>Terms of Service&lt;/a> of %7$s. &lt;a href=%8$s>Learn more&lt;/a> about how your account was verified.</string>
+    <string gender="unknown" name="com_accountkit_confirmation_code_agreement_app_privacy_policy_instant_verification">Tap %1$s to accept Facebook\'s &lt;a href=%2$s>Terms&lt;/a>, &lt;a href=%3$s>Data Policy&lt;/a> and &lt;a href=%4$s>cookie use&lt;/a>, and the &lt;a href=%5$s>Privacy Policy&lt;/a> of %6$s. &lt;a href=%7$s>Learn more&lt;/a> about how your account was verified.</string>
+    <string gender="unknown" name="com_accountkit_confirmation_code_text">I didn\'t receive a code</string>
+    <string gender="unknown" name="com_accountkit_email_invalid">This email address is incorrect. Please try again.</string>
+    <string gender="unknown" name="com_accountkit_email_loading_title">Verifying your email address…</string>
+    <string gender="unknown" name="com_accountkit_email_login_retry_title">Confirm your email address</string>
+    <string gender="unknown" name="com_accountkit_email_login_text">Tap %1$s to receive an email confirmation from Account Kit by Facebook to help you use %2$s. You don\'t need a Facebook account to use it. &lt;a href=%3$s>Learn how Facebook uses your info&lt;/a>.</string>
+    <string gender="unknown" name="com_accountkit_other_ways_to_get_code">Other ways to get a code:</string>
+    <string gender="unknown" name="com_accountkit_phone_login_text">Tap %1$s to verify your account with Account Kit powered by Facebook. You don\'t need a Facebook account to use Account Kit. An SMS may be sent to verify your number. Message and data rates may apply. &lt;a href=%2$s>Learn how Facebook uses your info&lt;/a>.</string>
+    <string gender="unknown" name="com_accountkit_resend_email_text">Send new email</string>
+    <string gender="unknown" name="com_accountkit_resend_title">If you haven\'t received a code:</string>
+    <string gender="unknown" name="com_accountkit_toolbar_title">Log in to %1$s</string>
+    <string gender="unknown" name="com_accountkit_voice_call_code_entry_title">Enter your code from the voice call</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView login requires Internet permission</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">AndroidManifest error</string>
+    <string gender="unknown" name="com_facebook_loading">Loading…</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">You\'re in control – choose what information you want to share with apps.</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Enable"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> won\'t work unless you enable Google Play services."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Enable Google Play services"</string>

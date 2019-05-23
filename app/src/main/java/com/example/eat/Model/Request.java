@@ -1,5 +1,7 @@
 package com.example.eat.Model;
 
+import com.facebook.share.widget.ShareDialog;
+
 import java.util.List;
 
 public class Request {
@@ -9,25 +11,21 @@ public class Request {
     private String total;
     private String status; // tình trạng của đơn hàng.
     private List<Order> foods;// Danh sách các món được đặt
+    private String comment;
+
 
     public Request() {
     }
 
-    public Request(String phone, String name, String address, String total, List<Order> foods) {
+    public Request(String phone, String name, String address, String total, String status, List<Order> foods, String comment) {
         this.phone = phone;
         this.name = name;
         this.address = address;
         this.total = total;
-        this.foods = foods;
-        this.status = "0"; //Mặc định =0, 0 : đã đặt; 1 :Đang giao; 2 : Đã giao
-    }
-
-    public String getStatus() {
-        return this.status;
-    }
-
-    public void setStatus(String status) {
         this.status = status;
+        this.foods = foods;
+        this.comment = comment;
+
     }
 
     public String getPhone() {
@@ -62,6 +60,14 @@ public class Request {
         this.total = total;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public List<Order> getFoods() {
         return foods;
     }
@@ -69,4 +75,14 @@ public class Request {
     public void setFoods(List<Order> foods) {
         this.foods = foods;
     }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
 }
+

@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="overplayBackground">#645F5F</color>
     <color name="overplayActionBar">#0E0E0D</color>
+    <color name="bgRowBackGround">#FA315B</color>
 </resources>

@@ -33,6 +33,24 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.eat.Information" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebood_app_id" />
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/account_kit_client_token" />
+
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            android:label="@string/com_accountkit_button_log_in"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AccountKit"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name="com.example.eat.ShowComment" />
         <activity android:name="com.example.eat.OrderStatus" />
         <activity android:name="com.example.eat.Cart" />
@@ -51,6 +69,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider2344383162471456"
+            android:exported="true" />
+
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity"
+            android:exported="true"
+            android:noHistory="true" />
+        <!--
+             The initialization ContentProvider will call AccountKit.initialize automatically
+             with the application context. This config is merged in with the host app's manifest,
+             but there can only be one provider with the same authority activated at any given
+             point; so if the end user has two or more different apps that use AccountKit, only the
+             first one will be able to use the provider. To work around this problem, we use the
+             following placeholder in the authority to identify each host application as if it was
+             a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.accountkit.internal.AccountKitInitProvider"
+            android:authorities="com.example.eat.AccountKitInitialization"
+            android:exported="false" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/com_facebook_activity_theme" />
+        <activity android:name="com.facebook.CustomTabMainActivity" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
@@ -149,6 +196,19 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+        <!--
+         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+         with the application context. This config is merged in with the host app's manifest,
+         but there can only be one provider with the same authority activated at any given
+         point; so if the end user has two or more different apps that use Facebook SDK, only the
+         first one will be able to use the provider. To work around this problem, we use the
+         following placeholder in the authority to identify each host application as if it was
+         a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:authorities="com.example.eat.FacebookInitProvider"
+            android:exported="false" />
     </application>
 
 </manifest>

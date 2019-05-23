@@ -6,8 +6,8 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_menu"
-            android:icon="@drawable/ic_restaurant_menu_black_24dp"
-            android:title="Menu" />
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="Thông tin người dùng" />
         <item
             android:id="@+id/nav_donhang"
             android:icon="@drawable/order"
@@ -16,9 +16,19 @@
             android:id="@+id/nav_datmon"
             android:icon="@drawable/cart"
             android:title="Giỏ hàng" />
+
+        <item
+            android:id="@+id/nav_update_name"
+            android:icon="@drawable/ic_security_black_24dp"
+            android:title="Cập nhập tên" />
+        <item
+            android:id="@+id/nav_home_address"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Cập nhật địa chỉ" />
         <item
             android:id="@+id/nav_dangxuat"
             android:icon="@drawable/logout"
             android:title="Đăng Xuất" />
+
     </group>
 </menu>

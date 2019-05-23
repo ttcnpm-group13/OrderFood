@@ -2,6 +2,8 @@ package com.example.eat;
 
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -16,11 +18,15 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.eat.Database.Database;
-import com.example.eat.Hientai.Hientai;
+import com.example.eat.Common.Common;
 import com.example.eat.Interface.ItemClickListener;
 import com.example.eat.Model.Food;
 import com.example.eat.Model.Order;
 import com.example.eat.ViewHolder.FoodViewHolder;
+import com.facebook.CallbackManager;
+import com.facebook.share.model.SharePhoto;
+import com.facebook.share.model.SharePhotoContent;
+import com.facebook.share.widget.ShareDialog;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DataSnapshot;
@@ -31,6 +37,7 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.mancj.materialsearchbar.MaterialSearchBar;
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,13 +55,46 @@ public class FoodList extends AppCompatActivity {
     FirebaseRecyclerAdapter<Food, FoodViewHolder> searchAdapter;
     List<String> suggestList = new ArrayList<>();
     MaterialSearchBar materialSearchBar;
-
     SwipeRefreshLayout swipeRefreshLayout;
+    //FaceBook Share
+    CallbackManager callbackManager;
+    ShareDialog shareDialog;
 
+    //Create Target from Picasso
+    Target target = new Target() {
+        @Override
+        public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+            //Create Photo from Bitmap
+            SharePhoto photo = new SharePhoto.Builder()
+                    .setBitmap(bitmap)
+                    .build();
+            if(ShareDialog.canShow(SharePhotoContent.class))
+            {
+                SharePhotoContent content = new SharePhotoContent.Builder()
+                        .addPhoto(photo)
+                        .build();
+                shareDialog.show(content);
+            }
+        }
+
+        @Override
+        public void onBitmapFailed(Drawable errorDrawable) {
+
+        }
+
+        @Override
+        public void onPrepareLoad(Drawable placeHolderDrawable) {
+
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_list);
+        //Init FaceBook
+        callbackManager = CallbackManager.Factory.create();
+        shareDialog = new ShareDialog(this);
+
         foodList = FirebaseDatabase.getInstance().getReference("Food");
         //SwipeRefreshLayout
         swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.swipe_layout);
@@ -70,7 +110,7 @@ public class FoodList extends AppCompatActivity {
                     CategoryId = getIntent().getStringExtra("CategoryId");
                 }
                 if(!CategoryId.isEmpty() && CategoryId !=null){
-                    if(Hientai.isConnectedToInternet(getBaseContext())){
+                    if(Common.isConnectedToInternet(getBaseContext())){
                         loadListFood(CategoryId);
                     }else{
                         Toast.makeText(FoodList.this,"Vui lòng kiểm tra kết nối Internet",Toast.LENGTH_LONG).show();
@@ -88,7 +128,7 @@ public class FoodList extends AppCompatActivity {
                     CategoryId = getIntent().getStringExtra("CategoryId");
                 }
                 if(!CategoryId.isEmpty() && CategoryId !=null){
-                    if(Hientai.isConnectedToInternet(getBaseContext())){
+                    if(Common.isConnectedToInternet(getBaseContext())){
                         loadListFood(CategoryId);
                     }else{
                         Toast.makeText(FoodList.this,"Vui lòng kiểm tra kết nối Internet",Toast.LENGTH_LONG).show();
@@ -130,7 +170,7 @@ public class FoodList extends AppCompatActivity {
                         //Khi Search Bar bị đóng
                         //Khôi phục adapter ban đầu
                         if(!enabled)
-                            searchAdapter.startListening();
+                            //searchAdapter.stopListening();
                         recyclerView.setAdapter(adapter);
                     }
 
@@ -228,17 +268,34 @@ public class FoodList extends AppCompatActivity {
                 Picasso.with(getBaseContext()).load(model.getImage())
                         .into(viewHolder.food_image);
                 //Quick Cart
-                viewHolder.quick_cart.setOnClickListener(new View.OnClickListener(){
+                    viewHolder.quick_cart.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            boolean isExists = new Database(getBaseContext()).checkFoodExists(adapter.getRef(position).getKey(),Common.currentUser.getPhone());
+                            if (!isExists) {
+                                new Database(getBaseContext()).addToCart(new Order(
+                                        Common.currentUser.getPhone(),
+                                        adapter.getRef(position).getKey(),
+                                        model.getName(),
+                                        "1",
+                                        model.getPrice(),
+                                        model.getImage()
+                                ));
+
+                            }else{
+                                new Database(getBaseContext()).increaseCart(Common.currentUser.getPhone(),adapter.getRef(position).getKey());
+                            }
+                            Toast.makeText(FoodList.this, "Đã thêm vào giỏ hàng", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
+                //Click to share
+                viewHolder.share_image.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onClick(View view){
-                        new Database(getBaseContext()).addToCart(new Order(
-                                    adapter.getRef(position).getKey(),
-                                    model.getName(),
-                                    "1",
-                                    model.getPrice(),
-                                    model.getImage()
-                        ));
-                        Toast.makeText(FoodList.this, "Đã thêm vào giỏ hàng",Toast.LENGTH_SHORT).show();
+                    public void onClick(View view) {
+                        Picasso.with(getApplicationContext())
+                                .load(model.getImage())
+                                .into(target);
                     }
                 });
                 final Food local = model;
@@ -270,6 +327,7 @@ public class FoodList extends AppCompatActivity {
         super.onResume();
         if(adapter!= null)
             adapter.startListening();
+
     }
         @Override
     protected void onStop() {

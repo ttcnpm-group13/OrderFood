@@ -4,6 +4,14 @@
     <dimen name="notification_content_margin_start">0dp</dimen>
     <dimen name="notification_main_column_padding_top">0dp</dimen>
     <dimen name="notification_media_narrow_margin">12dp</dimen>
+    <style name="AccountKit.Button" parent="Base.AccountKit.Button">
+        <item name="android:fontFamily">Roboto-Medium</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="AccountKit.InputText" parent="Base.AccountKit.InputText">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textCursorDrawable">@drawable/com_accountkit_input_cursor</item>
+    </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -265,6 +273,12 @@
 
         <item name="android:buttonBarStyle">?attr/buttonBarStyle</item>
         <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
+    </style>
+    <style name="SpotsDialogDefault" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Loading…</item>
+        <item name="DialogSpotColor">@android:color/holo_blue_dark</item>
+        <item name="DialogSpotCount">5</item>
     </style>
     <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.Material.Notification"/>
     <style name="TextAppearance.Compat.Notification.Info" parent="@android:style/TextAppearance.Material.Notification.Info"/>

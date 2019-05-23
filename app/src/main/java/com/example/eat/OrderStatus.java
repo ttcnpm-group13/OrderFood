@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.eat.Hientai.Hientai;
+import com.example.eat.Common.Common;
 import com.example.eat.Interface.ItemClickListener;
 import com.example.eat.Model.Request;
 import com.example.eat.ViewHolder.OrderViewHolder;
@@ -42,7 +42,7 @@ public class OrderStatus extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
 
-        loadOrders(Hientai.currentUser.getPhone());
+        loadOrders(Common.currentUser.getPhone());
 
     }
 
