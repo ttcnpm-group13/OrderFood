@@ -1687,6 +1687,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_refresh_black_24dp
 drawable ic_restaurant_menu_black_24dp
+drawable ic_search_black_24dp
 drawable ic_security_black_24dp
 drawable ic_share_black_24dp
 drawable ic_shopping_cart_black_24dp
@@ -1975,6 +1976,7 @@ id match_view
 id media_actions
 id menu_image
 id menu_name
+id menu_search
 id message
 id middle
 id mini
@@ -2040,7 +2042,7 @@ id rectangle
 id recyclerComment
 id recycler_food
 id recycler_menu
-id refresh
+id recycler_search
 id requestItem
 id right
 id right_icon
@@ -2208,6 +2210,7 @@ layout activity_home
 layout activity_information
 layout activity_main
 layout activity_order_status
+layout activity_search
 layout activity_show_comment
 layout app_bar_home
 layout cart_layout

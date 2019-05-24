@@ -480,6 +480,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\8d89b19204460ac8ba55c513c69a49eb\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
     },
     {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\layout\\activity_search.xml"
+    },
+    {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
@@ -2270,6 +2274,10 @@
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_background_color.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\489c1396065e4b121a4a25df8387a193\\res\\color\\mtrl_chip_background_color.xml"
+    },
+    {
+        "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search_black_24dp.xml.flat",
+        "source": "D:\\Program\\Eat\\app\\src\\main\\res\\drawable\\ic_search_black_24dp.xml"
     },
     {
         "merged": "D:\\Program\\Eat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_dark.xml.flat",

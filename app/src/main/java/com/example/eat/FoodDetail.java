@@ -138,9 +138,8 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
                     count++;
                 }
                 if(count !=0) {
-                    float average = (float)sum / (float)count;
+                    float average = (float)sum /(float)count;
                     ratingBar.setRating(average);
-
                 }
             }
 

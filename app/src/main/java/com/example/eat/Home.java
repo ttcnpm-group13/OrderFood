@@ -266,8 +266,8 @@ public class Home extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         //refresh menu
-        if(item.getItemId() == R.id.refresh){
-            Load_menu();
+        if(item.getItemId() == R.id.menu_search){
+            startActivity(new Intent(Home.this,SearchActivity.class));
         }
 
         return super.onOptionsItemSelected(item);

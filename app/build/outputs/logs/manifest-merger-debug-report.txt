@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-57:12
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [com.github.andremion:counterfab:1.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f015cf10ea527937d1d9bc7313e944b0\AndroidManifest.xml:2:1-14:12
 MERGED from [com.facebook.android:account-kit-sdk:4.29.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\abc1964d71dcc7df6c7e950b273ce4b1\AndroidManifest.xml:21:1-55:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\489c1396065e4b121a4a25df8387a193\AndroidManifest.xml:17:1-24:12
@@ -79,22 +79,22 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\DELL\.gradle\caches
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\d16907cf22a43bf64724b8092077214c\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\83819aab1f6e0105fbcf0e11720ec64d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\ea50f527f4a02032564c9706c0971782\AndroidManifest.xml:2:1-7:12
-INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-58:12
 	package
 		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:4:5-30
 		INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-57:12
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-58:12
 		INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml
 	xmlns:dist
 		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:3:5-61
 	android:versionCode
 		INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-57:12
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-58:12
 		INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:11-69
@@ -137,7 +137,7 @@ MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\DELL\.gradle\caches\tra
 	android:name
 		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:10:22-78
 application
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:12:5-55:19
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:12:5-56:19
 MERGED from [com.github.andremion:counterfab:1.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f015cf10ea527937d1d9bc7313e944b0\AndroidManifest.xml:12:5-20
 MERGED from [com.github.andremion:counterfab:1.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f015cf10ea527937d1d9bc7313e944b0\AndroidManifest.xml:12:5-20
 MERGED from [com.facebook.android:account-kit-sdk:4.29.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\abc1964d71dcc7df6c7e950b273ce4b1\AndroidManifest.xml:28:5-53:19
@@ -222,30 +222,34 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\DELL\.grad
 		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
 		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:18:9-40
+activity#com.example.eat.SearchActivity
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:19:9-61
+	android:name
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:19:19-49
 activity#com.example.eat.Information
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:19:9-58
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:20:9-49
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:19:19-46
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:20:19-46
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:21:9-23:55
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:22:9-24:55
 	android:value
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:23:13-52
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:24:13-52
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:22:13-58
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:23:13-58
 meta-data#com.facebook.accountkit.ApplicationName
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:24:9-26:48
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:25:9-27:48
 	android:value
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:26:13-45
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:27:13-45
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:25:13-67
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:26:13-67
 meta-data#com.facebook.accountkit.ClientToken
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:27:9-29:64
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:28:9-30:64
 	android:value
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:29:13-61
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:30:13-61
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:28:13-63
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:29:13-63
 activity#com.facebook.accountkit.ui.AccountKitActivity
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:31:9-82
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:32:9-82
 MERGED from [com.facebook.android:account-kit-sdk:4.29.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\abc1964d71dcc7df6c7e950b273ce4b1\AndroidManifest.xml:29:9-34:58
 MERGED from [com.facebook.android:account-kit-sdk:4.29.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\abc1964d71dcc7df6c7e950b273ce4b1\AndroidManifest.xml:29:9-34:58
 	android:label
@@ -257,65 +261,65 @@ MERGED from [com.facebook.android:account-kit-sdk:4.29.0] C:\Users\DELL\.gradle\
 	android:theme
 		ADDED from [com.facebook.android:account-kit-sdk:4.29.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\abc1964d71dcc7df6c7e950b273ce4b1\AndroidManifest.xml:33:13-52
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:31:19-79
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:32:19-79
 activity#com.example.eat.ShowComment
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:32:9-49
-	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:32:19-46
-activity#com.example.eat.OrderStatus
 ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:33:9-49
 	android:name
 		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:33:19-46
+activity#com.example.eat.OrderStatus
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:34:9-49
+	android:name
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:34:19-46
 activity#com.example.eat.Cart
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:34:9-42
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:35:9-42
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:34:19-39
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:35:19-39
 activity#com.example.eat.FoodDetail
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:35:9-48
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:36:9-48
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:35:19-45
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:36:19-45
 activity#com.example.eat.FoodList
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:36:9-46
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:37:9-46
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:36:19-43
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:37:19-43
 activity#com.example.eat.Home
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:37:9-40:59
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:38:9-41:59
 	android:label
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:39:13-56
-	android:theme
 		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:40:13-56
+	android:theme
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:41:13-56
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:38:13-33
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:39:13-33
 activity#com.example.eat.DangKy
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:41:9-44
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:42:9-44
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:41:19-41
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:42:19-41
 activity#com.example.eat.Dangnhap
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:42:9-46
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:43:9-46
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:42:19-43
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:43:19-43
 activity#com.example.eat.MainActivity
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:43:9-49:20
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:44:9-50:20
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:43:19-47
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:44:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:44:13-48:29
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:45:13-49:29
 action#android.intent.action.MAIN
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:45:17-69
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:46:17-69
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:45:25-66
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:46:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:47:17-77
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:48:17-77
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:47:27-74
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:48:27-74
 provider#com.facebook.FacebookContentProvider
-ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:51:9-54:39
+ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:52:9-55:39
 	android:authorities
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:53:13-91
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:54:13-91
 	android:exported
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:54:13-36
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:55:13-36
 	android:name
-		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:52:13-64
+		ADDED from D:\Program\Eat\app\src\main\AndroidManifest.xml:53:13-64
 uses-sdk
 INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Program\Eat\app\src\main\AndroidManifest.xml
@@ -581,7 +585,7 @@ ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\DELL\.gra
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\251d6aaec68eddaddec9adea91902673\AndroidManifest.xml:34:13-89
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-57:12 reason: com.daimajia.slider.library requested WRITE_EXTERNAL_STORAGE
+IMPLIED from D:\Program\Eat\app\src\main\AndroidManifest.xml:2:1-58:12 reason: com.daimajia.slider.library requested WRITE_EXTERNAL_STORAGE
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\0a796059b9baff30b682d229d5e620b9\AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\e19b6bcb56e59a398305a3c828c4d27b\AndroidManifest.xml:24:5-68
