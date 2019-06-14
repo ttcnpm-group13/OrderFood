@@ -37,7 +37,7 @@ public class Database extends SQLiteAssetHelper{
         SQLiteDatabase db = getReadableDatabase();
         SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
 
-        String[] sqlSelect = {"UserPhone","ProductName","ProductId","Quantity","Price","Image"};
+        String[] sqlSelect = {"UserPhone","ProductName","ProductId","Quantity","Price","Image", "Comment"};
         String sqlTable = "OrderDetail";
 
         qb.setTables(sqlTable);
@@ -52,8 +52,8 @@ public class Database extends SQLiteAssetHelper{
                         c.getString(c.getColumnIndex("ProductName")),
                         c.getString(c.getColumnIndex("Quantity")),
                         c.getString(c.getColumnIndex("Price")),
-                        c.getString(c.getColumnIndex("Image"))
-                        //c.getString(c.getColumnIndex("Image"))
+                        c.getString(c.getColumnIndex("Image")),
+                        c.getString(c.getColumnIndex("Comment"))
                 ));
             }while (c.moveToNext());
         }
@@ -62,13 +62,14 @@ public class Database extends SQLiteAssetHelper{
 
     public void addToCart(Order order) { //Thêm hàng vào giỏ tương đương với việc thêm thông tin các Order vào Database
         SQLiteDatabase db = getReadableDatabase();
-        String query = String.format("INSERT OR REPLACE INTO OrderDetail(UserPhone,ProductId,ProductName,Quantity,Price,Image) VALUES ('%s', '%s','%s','%s','%s','%s' );",
+        String query = String.format("INSERT OR REPLACE INTO OrderDetail(UserPhone,ProductId,ProductName,Quantity,Price,Image, Comment) VALUES ('%s', '%s','%s','%s','%s','%s', '%s');",
                 order.getUserPhone(),
                 order.getProductId(),
                 order.getProductName(),
                 order.getQuantity(),
                 order.getPrice(),
-                order.getImage()
+                order.getImage(),
+                order.getComment()
                );
         db.execSQL(query);
     }

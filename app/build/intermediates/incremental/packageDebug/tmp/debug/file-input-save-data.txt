@@ -1,23 +1,31 @@
 #Internal package file, do not edit.
-#Thu May 23 02:39:13 ICT 2019
-2.base=D\:\\Program\\Eat\\app\\build\\intermediates\\merged_assets\\debug\\out
-0.path=classes.dex
+#Thu Jun 13 23:18:49 ICT 2019
+2.base=D\:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\merged_assets\\debug\\out
+5.set=DEX
+0.path=fonts/VNI-Trung Kien.TTF
 2.baseType=DIRECTORY
-3.base=D\:\\Program\\Eat\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
+3.base=D\:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\merged_assets\\debug\\out
 2.set=ASSET
-1.path=fonts/NABILA.TTF
-4.base=D\:\\Program\\Eat\\app\\build\\intermediates\\merged_assets\\debug\\out
-count=5
-2.path=fonts/cf.otf
+1.path=fonts/VNI-Yahoo.ttf
+4.base=D\:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\merged_assets\\debug\\out
+count=7
+5.baseType=DIRECTORY
+2.path=databases/OrderFoodDB.db
+5.base=D\:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 4.set=ASSET
-3.path=classes.dex
+3.path=fonts/cf.otf
+6.base=D\:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
 3.baseType=DIRECTORY
 1.set=ASSET
-4.path=databases/OrderFoodDB.db
+4.path=fonts/NABILA.TTF
+6.set=DEX
 1.baseType=DIRECTORY
-0.base=D\:\\Program\\Eat\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+6.baseType=DIRECTORY
+5.path=classes.dex
+0.base=D\:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\merged_assets\\debug\\out
 0.baseType=DIRECTORY
-3.set=DEX
-1.base=D\:\\Program\\Eat\\app\\build\\intermediates\\merged_assets\\debug\\out
+3.set=ASSET
+6.path=classes.dex
+1.base=D\:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\merged_assets\\debug\\out
 4.baseType=DIRECTORY
-0.set=DEX
+0.set=ASSET

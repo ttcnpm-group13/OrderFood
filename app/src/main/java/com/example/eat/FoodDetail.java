@@ -28,6 +28,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.rengwuxian.materialedittext.MaterialEditText;
 import com.squareup.picasso.Picasso;
 import com.stepstone.apprating.AppRatingDialog;
 import com.stepstone.apprating.listener.RatingDialogListener;
@@ -48,6 +49,7 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
     ElegantNumberButton numberButton;
     RatingBar ratingBar;
     FButton btnShowComment;
+    MaterialEditText edtNote;
     String foodId = "";
     FirebaseDatabase database;
     DatabaseReference foods;
@@ -66,6 +68,7 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
         btnCart = (CounterFab) findViewById(R.id.btnCart);
         btnRating = (FloatingActionButton) findViewById(R.id.btn_rating);
         ratingBar = (RatingBar)findViewById(R.id.ratingBar);
+        edtNote = (MaterialEditText) findViewById(R.id.edtNote);
         //Hiện bình luận
         btnShowComment = (FButton)findViewById(R.id.btnShowComment);
         btnShowComment.setOnClickListener(new View.OnClickListener() {
@@ -93,8 +96,8 @@ public class FoodDetail extends AppCompatActivity implements RatingDialogListene
                         currentFood.getName(),
                         numberButton.getNumber(),
                         currentFood.getPrice(),
-                        currentFood.getImage()
-
+                        currentFood.getImage(),
+                        edtNote.getText().toString()
                 ));
                 Toast.makeText(FoodDetail.this,"Đã thêm hàng vào giỏ",Toast.LENGTH_SHORT).show();
             }

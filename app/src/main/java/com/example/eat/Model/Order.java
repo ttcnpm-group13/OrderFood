@@ -7,17 +7,19 @@ public class Order {
     private String Quantity;
     private String Price;
     private  String Image;
+    private String Comment;
 
     public Order() {
     }
 
-    public Order(String userPhone, String productId, String productName, String quantity, String price, String image) {
+    public Order(String userPhone, String productId, String productName, String quantity, String price, String image, String comment) {
         UserPhone = userPhone;
         ProductId = productId;
         ProductName = productName;
         Quantity = quantity;
         Price = price;
         Image = image;
+        Comment = comment;
     }
 
     public String getUserPhone() {
@@ -66,5 +68,13 @@ public class Order {
 
     public void setImage(String image) {
         Image = image;
+    }
+
+    public String getComment() {
+        return Comment;
+    }
+
+    public void setComment(String comment) {
+        Comment = comment;
     }
 }

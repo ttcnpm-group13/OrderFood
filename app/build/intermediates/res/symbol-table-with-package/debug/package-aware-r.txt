@@ -1607,8 +1607,10 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable back_ground
 drawable background
 drawable background_dangnhap
+drawable background_food1
 drawable cart
 drawable com_accountkit_check_sms
 drawable com_accountkit_code_fb
@@ -1681,6 +1683,12 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_magnify_black_48dp
 drawable ic_menu_black_24dp
+drawable ic_menu_camera
+drawable ic_menu_gallery
+drawable ic_menu_manage
+drawable ic_menu_send
+drawable ic_menu_share
+drawable ic_menu_slideshow
 drawable ic_microphone_black_48dp
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -1901,6 +1909,7 @@ id edtAddress
 id edtComment
 id edtHomeAddress
 id edtName
+id edtNote
 id edtmk
 id edtmk1
 id edtsdt

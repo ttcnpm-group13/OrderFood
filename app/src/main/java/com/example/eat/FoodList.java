@@ -279,7 +279,8 @@ public class FoodList extends AppCompatActivity {
                                         model.getName(),
                                         "1",
                                         model.getPrice(),
-                                        model.getImage()
+                                        model.getImage(),
+                                        ""
                                 ));
 
                             }else{

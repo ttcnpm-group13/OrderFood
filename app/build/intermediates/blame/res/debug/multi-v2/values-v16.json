@@ -1,20 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Program\\Eat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "D:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\2f9c03f0ac85b1701a5e98a9af6ba7a0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\874f07b7633e808c4ad0b9de1e01d8d1\\res\\values-v16\\values-v16.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
+                        "startLines": "2,5,8,11,14",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,215,358,510,652",
+                        "endLines": "4,7,10,13,16",
+                        "endColumns": "12,12,12,12,12",
+                        "endOffsets": "210,353,505,647,795"
+                    },
+                    "to": {
+                        "startLines": "3,6,9,12,15",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "121,281,424,576,718",
+                        "endLines": "5,8,11,14,17",
+                        "endColumns": "12,12,12,12,12",
+                        "endOffsets": "276,419,571,713,861"
                     }
                 },
                 {
-                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\6d1c419ca9ebfe72ec72d5cd4de64f10\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -33,22 +42,13 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24cdb2c06af41f51011c9b46c9d66885\\res\\values-v16\\values-v16.xml",
                     "from": {
-                        "startLines": "2,5,8,11,14",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,215,358,510,652",
-                        "endLines": "4,7,10,13,16",
-                        "endColumns": "12,12,12,12,12",
-                        "endOffsets": "210,353,505,647,795"
-                    },
-                    "to": {
-                        "startLines": "3,6,9,12,15",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "121,281,424,576,718",
-                        "endLines": "5,8,11,14,17",
-                        "endColumns": "12,12,12,12,12",
-                        "endOffsets": "276,419,571,713,861"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

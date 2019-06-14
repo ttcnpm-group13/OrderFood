@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Program\\Eat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
+            "outputFile": "D:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\24d46ad0f5f76088599bc7a689454be3\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\6d1c419ca9ebfe72ec72d5cd4de64f10\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\abc1964d71dcc7df6c7e950b273ce4b1\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\874f07b7633e808c4ad0b9de1e01d8d1\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,14",
                         "startColumns": "4,4",
