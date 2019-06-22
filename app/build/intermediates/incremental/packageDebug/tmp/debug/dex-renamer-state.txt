@@ -1,7 +1,10 @@
-#Fri Jun 14 23:10:03 ICT 2019
-base.0=D\:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+#Sun Jun 23 00:23:01 ICT 2019
+path.2=classes2.dex
 path.1=classes.dex
-renamed.1=classes2.dex
 path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.2=D\:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 base.1=D\:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
+base.0=D\:\\ttcnpm-group13\\OrderFood\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out

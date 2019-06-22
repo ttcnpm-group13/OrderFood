@@ -36,6 +36,7 @@ import com.example.eat.Database.Database;
 import com.example.eat.Interface.ItemClickListener;
 import com.example.eat.Model.Banner;
 import com.example.eat.Model.Category;
+import com.example.eat.Model.Token;
 import com.example.eat.ViewHolder.MenuViewHolder;
 import com.facebook.accountkit.AccountKit;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -47,6 +48,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.rengwuxian.materialedittext.MaterialEditText;
 import com.squareup.picasso.Picasso;
 
@@ -107,6 +109,8 @@ public class Home extends AppCompatActivity
             }
         });
 
+        updateToken(FirebaseInstanceId.getInstance().getToken());
+
         //khai bao du lieu tu database
         category= FirebaseDatabase.getInstance().getReference("Category");
         //Paper.init(this);
@@ -143,6 +147,12 @@ public class Home extends AppCompatActivity
         list_menu.setLayoutManager(new GridLayoutManager(this, 2));
         //Set up slider
         setupSlider();
+    }
+
+    private void updateToken(String token) {
+        DatabaseReference tokens = FirebaseDatabase.getInstance().getReference("Tokens");
+        Token data = new Token(token, false);
+        tokens.child(Common.currentUser.getPhone()).setValue(data);
     }
 
     private void setupSlider() {

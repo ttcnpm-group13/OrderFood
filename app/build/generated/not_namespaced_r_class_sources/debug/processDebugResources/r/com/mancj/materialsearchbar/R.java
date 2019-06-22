@@ -824,9 +824,9 @@ public final class R {
         public static final int action_placeholder = 0x7f0f0028;
         public static final int action_search = 0x7f0f0029;
         public static final int app_name = 0x7f0f002d;
-        public static final int search_menu_title = 0x7f0f00b3;
-        public static final int status_bar_notification_info_overflow = 0x7f0f00b4;
-        public static final int title_activity_main2 = 0x7f0f00b7;
+        public static final int search_menu_title = 0x7f0f00b4;
+        public static final int status_bar_notification_info_overflow = 0x7f0f00b5;
+        public static final int title_activity_main2 = 0x7f0f00b8;
     }
     public static final class style {
         private style() {}

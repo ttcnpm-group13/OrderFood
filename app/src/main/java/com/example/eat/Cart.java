@@ -3,7 +3,9 @@ package com.example.eat;
 
 import android.content.DialogInterface;
 import android.graphics.Color;
+import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +14,7 @@ import android.support.v7.widget.RecyclerView;
 
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,12 +29,21 @@ import com.example.eat.Database.Database;
 import com.example.eat.Common.Common;
 import com.example.eat.Helper.RecyclerItemTouchHelper;
 import com.example.eat.Interface.RecyclerItemTouchHelperListener;
+import com.example.eat.Model.MyResponse;
+import com.example.eat.Model.Notification;
 import com.example.eat.Model.Order;
 import com.example.eat.Model.Request;
+import com.example.eat.Model.Sender;
+import com.example.eat.Model.Token;
+import com.example.eat.Remote.APIService;
 import com.example.eat.ViewHolder.CartAdapter;
 import com.example.eat.ViewHolder.CartViewHolder;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.rengwuxian.materialedittext.MaterialEditText;
 import com.rey.material.widget.SnackBar;
 
@@ -40,6 +52,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import info.hoang8f.widget.FButton;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class Cart extends AppCompatActivity implements RecyclerItemTouchHelperListener {
     RecyclerView recyclerView;
@@ -61,11 +76,15 @@ public class Cart extends AppCompatActivity implements RecyclerItemTouchHelperLi
     AutocompleteSupportFragment autocompleteSupportFragment;
 */
     RelativeLayout rootLayout;
+    APIService mService;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //Note: add this code before setContentView method
         setContentView(R.layout.activity_cart);
+        // init service
+        mService = Common.getFCMService();
+
         rootLayout=(RelativeLayout)findViewById(R.id.rootLayout);
         //Khởi tạo Fire base cho các yêu cầu đơn hàng
         database = FirebaseDatabase.getInstance();
@@ -154,12 +173,14 @@ public class Cart extends AppCompatActivity implements RecyclerItemTouchHelperLi
                 );
                 //Gửi lên Firebase
                 //Sử dụng System.CurentTimeMilli đến key
-                requests.child(String.valueOf(System.currentTimeMillis()))
+                String order_number = String.valueOf(System.currentTimeMillis());
+                requests.child(order_number)
                         .setValue(request);
+
                 //Xóa giỏ hàng
                 new Database(getBaseContext()).cleanCart(Common.currentUser.getPhone());
-                Toast.makeText(Cart.this,"Đơn hàng đã được gửi đi",Toast.LENGTH_SHORT).show();
-                finish();
+
+                sendNotoficationOrder(order_number);
                 /*
                 //Remove Fragment
                 getSupportFragmentManager().beginTransaction()
@@ -178,6 +199,47 @@ public class Cart extends AppCompatActivity implements RecyclerItemTouchHelperLi
         });
         alertDialog.show();
     }
+
+    private void sendNotoficationOrder(final String order_number) {
+        DatabaseReference tokens = FirebaseDatabase.getInstance().getReference("Tokens");
+        Query data = tokens.orderByChild("serverToken").equalTo(true);
+        data.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
+                    Token serverToken = postSnapshot.getValue(Token.class);
+                    Notification notification = new Notification("Bạn có đơn hàng mới " + order_number, "Thông báo");
+                    Sender content = new Sender(serverToken.getToken(), notification);
+                    mService.sendNotification(content)
+                            .enqueue(new Callback<MyResponse>() {
+                                @Override
+                                public void onResponse(Call<MyResponse> call, Response<MyResponse> response) {
+                                    if(response.code() == 200) {
+                                        if (response.body().success == 1) {
+                                            Toast.makeText(Cart.this,"Đơn hàng đã được gửi đi",Toast.LENGTH_SHORT).show();
+                                            finish();
+                                        }
+                                        else {
+                                            Toast.makeText(Cart.this,"Lỗi !",Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                }
+
+                                @Override
+                                public void onFailure(Call<MyResponse> call, Throwable t) {
+                                    Log.e("ERROR", t.getMessage());
+                                }
+                            });
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
     /*
     private void initPlaces() {
         Places.initialize(this,getString(R.string.places_api_key));
